@@ -1,0 +1,15 @@
+/*
+Theme Name: Digital G+
+Theme URI: https://digitalgmas.cl
+Author: Digital G+
+Description: Tema a medida del sitio de Digital G+: digitalización, productos Bibliotheca y plataformas con IA para bibliotecas. Sin plugins ni constructores visuales. Al activarlo, ve a «Digital G+ → Importar contenido» para cargar páginas, servicios, clientes e imágenes.
+Version: 1.0.0
+Requires at least: 6.5
+Tested up to: 7.1
+Requires PHP: 8.0
+License: Uso exclusivo de Digital G+
+Text Domain: digitalgmas
+*/
+
+/* Los estilos del sitio están en assets/css/estilos.css.
+   Este archivo solo identifica el tema ante WordPress. */

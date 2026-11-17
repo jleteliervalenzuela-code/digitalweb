@@ -1,0 +1,763 @@
+{
+ "sitio": {
+  "nombre": "Digital G+",
+  "lema": "Asistencia bibliotecaria de calidad"
+ },
+ "imagenes": [
+  {
+   "archivo": "servicios/digitalizacion-bibliografias-1.jpg",
+   "alt": "Libro digitalizado visto en un computador portátil, una tableta y un teléfono",
+   "titulo": "Libro digitalizado visto en un computador portátil, una tableta y un teléfono"
+  },
+  {
+   "archivo": "servicios/digitalizacion-bibliografias-2.jpg",
+   "alt": "Visor de un libro digitalizado con tabla de contenidos y páginas enfrentadas",
+   "titulo": "Visor de un libro digitalizado con tabla de contenidos y páginas enfrentadas"
+  },
+  {
+   "archivo": "servicios/digitalizacion-bibliografias-banner.jpg",
+   "alt": "",
+   "titulo": "Digitalizacion bibliografias banner"
+  },
+  {
+   "archivo": "servicios/digitalizacion-de-documentos-banner.jpg",
+   "alt": "",
+   "titulo": "Digitalizacion de documentos banner"
+  },
+  {
+   "archivo": "servicios/digitalizacion-material-patrimonial-banner.jpg",
+   "alt": "",
+   "titulo": "Digitalizacion material patrimonial banner"
+  },
+  {
+   "archivo": "servicios/antenas-de-seguridad-rfid-banner.jpg",
+   "alt": "",
+   "titulo": "Antenas de seguridad rfid banner"
+  },
+  {
+   "archivo": "servicios/auto-prestamo-1.jpg",
+   "alt": "Usuaria de una biblioteca registra su préstamo en un equipo de autopréstamo de Bibliotheca",
+   "titulo": "Usuaria de una biblioteca registra su préstamo en un equipo de autopréstamo de Bibliotheca"
+  },
+  {
+   "archivo": "servicios/auto-prestamo-banner.jpg",
+   "alt": "",
+   "titulo": "Auto prestamo banner"
+  },
+  {
+   "archivo": "servicios/auto-prestamo-desde-el-movil-1.jpg",
+   "alt": "Tres teléfonos muestran la aplicación cloudLibrary: escaneo del código de barras de un libro y confirmación del préstamo",
+   "titulo": "Tres teléfonos muestran la aplicación cloudLibrary: escaneo del código de barras de un libro y confirmación del préstamo"
+  },
+  {
+   "archivo": "servicios/auto-prestamo-desde-el-movil-banner.jpg",
+   "alt": "",
+   "titulo": "Auto prestamo desde el movil banner"
+  },
+  {
+   "archivo": "servicios/estanterias-inteligentes-1.jpg",
+   "alt": "Usuario devuelve un libro en una estantería inteligente de Bibliotheca",
+   "titulo": "Usuario devuelve un libro en una estantería inteligente de Bibliotheca"
+  },
+  {
+   "archivo": "servicios/estanterias-inteligentes-banner.jpg",
+   "alt": "",
+   "titulo": "Estanterias inteligentes banner"
+  },
+  {
+   "archivo": "servicios/cuenta-personas-2.jpg",
+   "alt": "Panel de open+ count en un computador portátil con un gráfico de visitas por hora",
+   "titulo": "Panel de open+ count en un computador portátil con un gráfico de visitas por hora"
+  },
+  {
+   "archivo": "servicios/cuenta-personas-1.jpg",
+   "alt": "Vista cenital de la cámara de open+ count detectando a una persona en el acceso de la biblioteca",
+   "titulo": "Vista cenital de la cámara de open+ count detectando a una persona en el acceso de la biblioteca"
+  },
+  {
+   "archivo": "servicios/cuenta-personas-banner.jpg",
+   "alt": "",
+   "titulo": "Cuenta personas banner"
+  },
+  {
+   "archivo": "servicios/inventarios-1.jpg",
+   "alt": "Lector RFID de mano con un teléfono acoplado recorre los lomos de los libros en una estantería",
+   "titulo": "Lector RFID de mano con un teléfono acoplado recorre los lomos de los libros en una estantería"
+  },
+  {
+   "archivo": "servicios/inventarios-banner.jpg",
+   "alt": "",
+   "titulo": "Inventarios banner"
+  },
+  {
+   "archivo": "servicios/lockers-inteligentes-1.jpg",
+   "alt": "Usuaria retira un libro reservado desde un locker inteligente rojo",
+   "titulo": "Usuaria retira un libro reservado desde un locker inteligente rojo"
+  },
+  {
+   "archivo": "servicios/lockers-inteligentes-2.jpg",
+   "alt": "Módulo de lockers remoteLocker decorado con lomos de libros y pantalla táctil central",
+   "titulo": "Módulo de lockers remoteLocker decorado con lomos de libros y pantalla táctil central"
+  },
+  {
+   "archivo": "servicios/lockers-inteligentes-3.jpg",
+   "alt": "Módulo de lockers remoteLocker con gráfica personalizada y lector en la puerta central",
+   "titulo": "Módulo de lockers remoteLocker con gráfica personalizada y lector en la puerta central"
+  },
+  {
+   "archivo": "servicios/lockers-inteligentes-banner.jpg",
+   "alt": "",
+   "titulo": "Lockers inteligentes banner"
+  },
+  {
+   "archivo": "servicios/portal-de-bibliotecas-1.jpg",
+   "alt": "Portal de bibliotecas de la Universidad de O’Higgins en un computador portátil",
+   "titulo": "Portal de bibliotecas de la Universidad de O’Higgins en un computador portátil"
+  },
+  {
+   "archivo": "servicios/portal-de-bibliotecas-2.jpg",
+   "alt": "Portal de biblioteca del CFT ENAC en un computador portátil",
+   "titulo": "Portal de biblioteca del CFT ENAC en un computador portátil"
+  },
+  {
+   "archivo": "servicios/portal-de-bibliotecas-3.jpg",
+   "alt": "Portal de bibliotecas de la Universidad Bernardo O’Higgins en un computador portátil",
+   "titulo": "Portal de bibliotecas de la Universidad Bernardo O’Higgins en un computador portátil"
+  },
+  {
+   "archivo": "servicios/portal-de-bibliotecas-banner.jpg",
+   "alt": "",
+   "titulo": "Portal de bibliotecas banner"
+  },
+  {
+   "archivo": "servicios/koha-1.jpg",
+   "alt": "Catálogo en línea Koha de la biblioteca del CFT ENAC en un computador portátil",
+   "titulo": "Catálogo en línea Koha de la biblioteca del CFT ENAC en un computador portátil"
+  },
+  {
+   "archivo": "servicios/koha-2.jpg",
+   "alt": "Catálogo en línea Koha en un computador portátil y en un teléfono",
+   "titulo": "Catálogo en línea Koha en un computador portátil y en un teléfono"
+  },
+  {
+   "archivo": "servicios/koha-banner.jpg",
+   "alt": "",
+   "titulo": "Koha banner"
+  },
+  {
+   "archivo": "servicios/buscador-bibliografias-1.jpg",
+   "alt": "Pantallas del Buscador de Bibliografías: lista de asignaturas del estudiante y la bibliografía de una de ellas",
+   "titulo": "Pantallas del Buscador de Bibliografías: lista de asignaturas del estudiante y la bibliografía de una de ellas"
+  },
+  {
+   "archivo": "servicios/buscador-bibliografias-banner.jpg",
+   "alt": "",
+   "titulo": "Buscador bibliografias banner"
+  },
+  {
+   "archivo": "servicios/agente-biblioteca-1.jpg",
+   "alt": "Pantallas de la Biblioteca Agéntica: un asistente conversacional responde consultas de estudiantes con datos de la biblioteca",
+   "titulo": "Pantallas de la Biblioteca Agéntica: un asistente conversacional responde consultas de estudiantes con datos de la bibli"
+  },
+  {
+   "archivo": "servicios/agente-biblioteca-banner.jpg",
+   "alt": "",
+   "titulo": "Agente biblioteca banner"
+  },
+  {
+   "archivo": "servicios/visor-libro-ia-1.jpg",
+   "alt": "Pantallas del Visor de PDF: un libro abierto con panel de notas y un asistente de estudio al costado",
+   "titulo": "Pantallas del Visor de PDF: un libro abierto con panel de notas y un asistente de estudio al costado"
+  },
+  {
+   "archivo": "servicios/visor-libro-ia-banner.jpg",
+   "alt": "",
+   "titulo": "Visor libro ia banner"
+  },
+  {
+   "archivo": "clientes/uc.jpg",
+   "alt": "Pontificia Universidad Católica de Chile",
+   "titulo": "Pontificia Universidad Católica de Chile"
+  },
+  {
+   "archivo": "clientes/sii.jpg",
+   "alt": "Servicio de Impuestos Internos",
+   "titulo": "Servicio de Impuestos Internos"
+  },
+  {
+   "archivo": "clientes/uss.jpg",
+   "alt": "Universidad San Sebastián",
+   "titulo": "Universidad San Sebastián"
+  },
+  {
+   "archivo": "clientes/udec.jpg",
+   "alt": "Universidad de Concepción",
+   "titulo": "Universidad de Concepción"
+  },
+  {
+   "archivo": "clientes/ubo.jpg",
+   "alt": "Universidad Bernardo O’Higgins",
+   "titulo": "Universidad Bernardo O’Higgins"
+  },
+  {
+   "archivo": "clientes/uoh.jpg",
+   "alt": "Universidad de O’Higgins",
+   "titulo": "Universidad de O’Higgins"
+  },
+  {
+   "archivo": "clientes/uah.jpg",
+   "alt": "Universidad Alberto Hurtado",
+   "titulo": "Universidad Alberto Hurtado"
+  },
+  {
+   "archivo": "clientes/ucen.jpg",
+   "alt": "Universidad Central",
+   "titulo": "Universidad Central"
+  },
+  {
+   "archivo": "clientes/ucsc.jpg",
+   "alt": "Universidad Católica de la Santísima Concepción",
+   "titulo": "Universidad Católica de la Santísima Concepción"
+  },
+  {
+   "archivo": "clientes/uautonoma.jpg",
+   "alt": "Universidad Autónoma de Chile",
+   "titulo": "Universidad Autónoma de Chile"
+  },
+  {
+   "archivo": "clientes/enac.jpg",
+   "alt": "Centro de Formación Técnica ENAC",
+   "titulo": "Centro de Formación Técnica ENAC"
+  },
+  {
+   "archivo": "clientes/cft-san-agustin.jpg",
+   "alt": "CFT San Agustín",
+   "titulo": "CFT San Agustín"
+  },
+  {
+   "archivo": "clientes/subercaseaux.jpg",
+   "alt": "Instituto de Banca y Finanzas Subercaseaux",
+   "titulo": "Instituto de Banca y Finanzas Subercaseaux"
+  },
+  {
+   "archivo": "clientes/proandes.jpg",
+   "alt": "Centro de Formación Técnica ProAndes",
+   "titulo": "Centro de Formación Técnica ProAndes"
+  },
+  {
+   "archivo": "clientes/aiep.jpg",
+   "alt": "AIEP de la Universidad Andrés Bello",
+   "titulo": "AIEP de la Universidad Andrés Bello"
+  },
+  {
+   "archivo": "clientes/medicina-uchile.jpg",
+   "alt": "Facultad de Medicina de la Universidad de Chile",
+   "titulo": "Facultad de Medicina de la Universidad de Chile"
+  },
+  {
+   "archivo": "clientes/uandes.jpg",
+   "alt": "Universidad de los Andes",
+   "titulo": "Universidad de los Andes"
+  },
+  {
+   "archivo": "clientes/iplacex.jpg",
+   "alt": "Iplacex",
+   "titulo": "Iplacex"
+  },
+  {
+   "archivo": "clientes/ualba.jpg",
+   "alt": "Universidad del Alba",
+   "titulo": "Universidad del Alba"
+  },
+  {
+   "archivo": "lineas/equipo.jpg",
+   "alt": "Profesionales trabajando con computadores portátiles",
+   "titulo": "Profesionales trabajando con computadores portátiles"
+  }
+ ],
+ "lineas": [
+  {
+   "slug": "digitalizacion",
+   "nombre": "Digitalización",
+   "descripcion": "Grupo de profesionales interdisciplinarios en gestión documental y bibliográfica.",
+   "imagen": "servicios/digitalizacion-bibliografias-1.jpg",
+   "orden": 1
+  },
+  {
+   "slug": "productos-bibliotheca",
+   "nombre": "Productos Bibliotheca",
+   "descripcion": "Somos distribuidor de Bibliotheca en Chile.",
+   "imagen": "servicios/estanterias-inteligentes-1.jpg",
+   "orden": 2
+  },
+  {
+   "slug": "plataformas-ia",
+   "nombre": "Plataformas y productos con IA",
+   "descripcion": "Súmate al cambio y adopta las herramientas de transformación digital.",
+   "imagen": "servicios/agente-biblioteca-1.jpg",
+   "orden": 3
+  }
+ ],
+ "servicios": [
+  {
+   "slug": "digitalizacion-bibliografias",
+   "nombre": "Digitalización de bibliografías",
+   "nombre_corto": "",
+   "bajada": "",
+   "linea": "digitalizacion",
+   "orden": 10,
+   "parrafos": [
+    "La digitalización de bibliografías es un servicio especializado para bibliotecas que mejorará el acceso y la disponibilidad de los recursos bibliográficos, permitiendo a los usuarios acceder de manera más eficiente y cómoda en su proceso de estudio e investigación académica."
+   ],
+   "lista_titulo": "Entre las acciones que contempla el servicio",
+   "lista": [
+    "Desempaste y empaste de libros.",
+    "Escaneo y captura de imágenes con OCR.",
+    "Procesamiento de las imágenes: las imágenes digitalizadas son sometidas a un proceso de optimización y edición para asegurar una reproducción clara y legible en el caso de que el material presente textos y/o contenido adicional.",
+    "Conversión de PDF a un formato seguro según requerimientos de la legislación actual Ley 17.336 Art. 71 K.",
+    "Creación de índices.",
+    "Indicadores de uso."
+   ],
+   "enlace_texto": "",
+   "enlace_url": "",
+   "foto": "servicios/digitalizacion-bibliografias-1.jpg",
+   "galeria": [
+    "servicios/digitalizacion-bibliografias-2.jpg"
+   ],
+   "franja": "servicios/digitalizacion-bibliografias-banner.jpg"
+  },
+  {
+   "slug": "digitalizacion-de-documentos",
+   "nombre": "Digitalización de documentos",
+   "nombre_corto": "",
+   "bajada": "",
+   "linea": "digitalizacion",
+   "orden": 20,
+   "parrafos": [
+    "Este servicio está orientado a instituciones y empresas que requieran digitalizar sus documentos para su conservación, optimización de espacios físicos, mejorar el acceso, entre otros.",
+    "Además del escaneo de los documentos, ofrecemos soluciones tecnológicas personalizadas y flexibles, diseñadas para optimizar la gestión documental."
+   ],
+   "lista_titulo": "",
+   "lista": [],
+   "enlace_texto": "",
+   "enlace_url": "",
+   "foto": null,
+   "galeria": [],
+   "franja": "servicios/digitalizacion-de-documentos-banner.jpg"
+  },
+  {
+   "slug": "digitalizacion-material-patrimonial",
+   "nombre": "Digitalización de documentos históricos y patrimoniales",
+   "nombre_corto": "Documentos históricos y patrimoniales",
+   "bajada": "",
+   "linea": "digitalizacion",
+   "orden": 30,
+   "parrafos": [
+    "La digitalización de documentos históricos y patrimoniales tiene como objetivo preservar, facilitar el acceso, difusión, y protección de posibles daños o pérdidas. Esta práctica se ha vuelto cada vez más importante en el ámbito de la preservación del patrimonio cultural y la gestión de archivos."
+   ],
+   "lista_titulo": "Entre las acciones que contempla el servicio",
+   "lista": [
+    "Evaluación de especialistas en el área de conservación y restauración.",
+    "Preparación física del material.",
+    "Escaneo y captura de imágenes con OCR.",
+    "Procesamiento de las imágenes: puede incluir ajustes de contraste, eliminación de manchas o raspaduras, corrección de inclinación, entre otros."
+   ],
+   "enlace_texto": "",
+   "enlace_url": "",
+   "foto": null,
+   "galeria": [],
+   "franja": "servicios/digitalizacion-material-patrimonial-banner.jpg"
+  },
+  {
+   "slug": "antenas-de-seguridad-rfid",
+   "nombre": "Antenas de seguridad (RFID)",
+   "nombre_corto": "",
+   "bajada": "",
+   "linea": "productos-bibliotheca",
+   "orden": 40,
+   "parrafos": [
+    "El lugar seguro no sólo debe priorizar la seguridad, sino también brindar un entorno agradable y estéticamente atractivo. Es de gran importancia lograr un equilibrio entre la protección de su inversión y la apariencia visual de su biblioteca. Es por eso que las puertas de seguridad están diseñadas específicamente para ofrecer características innovadoras que aseguran sus materiales sin comprometer el ambiente acogedor de su espacio.",
+    "Desde las puertas Tattle-Tape hasta las soluciones RFID, todas nuestras opciones de seguridad están diseñadas para adaptarse a diferentes necesidades y tecnologías: RFID, de ultra alta frecuencia (UHF) y electromagnética (EM)."
+   ],
+   "lista_titulo": "",
+   "lista": [],
+   "enlace_texto": "Más información en Bibliotheca",
+   "enlace_url": "https://www.bibliotheca.com/es-la/soluciones/deteccion-de-seguridad/",
+   "foto": null,
+   "galeria": [],
+   "franja": "servicios/antenas-de-seguridad-rfid-banner.jpg"
+  },
+  {
+   "slug": "auto-prestamo",
+   "nombre": "Auto préstamo",
+   "nombre_corto": "",
+   "bajada": "",
+   "linea": "productos-bibliotheca",
+   "orden": 50,
+   "parrafos": [
+    "Incorpora en tu biblioteca la mejor experiencia de préstamo y devolución para tus usuarios, con una interfaz intuitiva y muy sencilla de utilizar, sin importar la tecnología que utilice tu biblioteca: RFID, EM o códigos de barras.",
+    "Contamos con variados modelos y configuraciones disponibles, con características audibles, visuales, táctiles y de texto, entre otras, para crear la mejor experiencia de usuario para tu biblioteca."
+   ],
+   "lista_titulo": "",
+   "lista": [],
+   "enlace_texto": "Más información en Bibliotheca",
+   "enlace_url": "https://www.bibliotheca.com/es-la/soluciones/prestamo-autoservicio/",
+   "foto": "servicios/auto-prestamo-1.jpg",
+   "galeria": [],
+   "franja": "servicios/auto-prestamo-banner.jpg"
+  },
+  {
+   "slug": "auto-prestamo-desde-el-movil",
+   "nombre": "Auto préstamo desde el móvil (cloudLibrary)",
+   "nombre_corto": "Auto préstamo desde el móvil",
+   "bajada": "",
+   "linea": "productos-bibliotheca",
+   "orden": 60,
+   "parrafos": [
+    "Los préstamos desde la aplicación cloudLibrary permitirán a sus usuarios gestionar sus préstamos directamente desde la palma de la mano. Mediante el escaneo del código de barras de un libro con la cámara de un dispositivo móvil, un simple toque en el botón de préstamo y luego la desactivación de la seguridad, los usuarios podrán gestionar su préstamo.",
+    "El préstamo desde cloudLibrary no sólo facilita el préstamo de una forma autónoma y sencilla, sino que también permite a las bibliotecas promocionar información importante a su comunidad académica mediante notificaciones. Esto permite una comunicación efectiva y oportuna con los usuarios, manteniéndolos informados sobre actividades y nuevos recursos y servicios que incorpora la biblioteca.",
+    "El préstamo desde cloudLibrary es compatible con tecnología RFID, EM o de códigos de barras."
+   ],
+   "lista_titulo": "",
+   "lista": [],
+   "enlace_texto": "Más información en Bibliotheca",
+   "enlace_url": "https://www.bibliotheca.com/es-la/soluciones/prestamo-movil/",
+   "foto": "servicios/auto-prestamo-desde-el-movil-1.jpg",
+   "galeria": [],
+   "franja": "servicios/auto-prestamo-desde-el-movil-banner.jpg"
+  },
+  {
+   "slug": "estanterias-inteligentes",
+   "nombre": "Estanterías inteligentes",
+   "nombre_corto": "",
+   "bajada": "",
+   "linea": "productos-bibliotheca",
+   "orden": 70,
+   "parrafos": [
+    "Esta tecnología permite a los usuarios experimentar un proceso rápido en la devolución de sus materiales, al mismo tiempo que tienen acceso a una colección que recién ha sido devuelta. Por otro lado, las devoluciones automatizadas reducen el tiempo que el personal bibliotecario dedica a ingresar y reorganizar material en los estantes, lo que les permite tener más tiempo para interacciones significativas con los usuarios.",
+    "Una de las principales características de esta tecnología es que cuenta con un tamaño reducido y una instalación sencilla, lo que la convierte en la opción ideal para bibliotecas que desean implementar un sistema de devolución automática sin incurrir en altos costos de inversión y sin requerir un espacio significativo, como una solución completa de manipulación automatizada de materiales."
+   ],
+   "lista_titulo": "",
+   "lista": [],
+   "enlace_texto": "Más información en Bibliotheca",
+   "enlace_url": "https://www.bibliotheca.com/es-la/soluciones/estantes-inteligentes-de-devolucion/",
+   "foto": "servicios/estanterias-inteligentes-1.jpg",
+   "galeria": [],
+   "franja": "servicios/estanterias-inteligentes-banner.jpg"
+  },
+  {
+   "slug": "cuenta-personas-y-analisis-de-datos",
+   "nombre": "Cuenta personas y análisis de datos",
+   "nombre_corto": "",
+   "bajada": "",
+   "linea": "productos-bibliotheca",
+   "orden": 80,
+   "parrafos": [
+    "El sistema de conteo de personas open+ count utiliza cámaras inteligentes que cuentan en forma anónima y precisa a quienes entran y salen de la biblioteca. open+ count también proporciona datos estratégicos e informes de uso para ayudar a las bibliotecas a tomar decisiones basadas en datos sobre el uso futuro del espacio de la biblioteca.",
+    "Además de gestionar la ocupación, se puede utilizar en múltiples áreas dentro de la biblioteca para analizar patrones de uso."
+   ],
+   "lista_titulo": "",
+   "lista": [],
+   "enlace_texto": "Más información en Bibliotheca",
+   "enlace_url": "https://www.bibliotheca.com/es-la/soluciones/ocupacion-cumplimiento/",
+   "foto": "servicios/cuenta-personas-2.jpg",
+   "galeria": [
+    "servicios/cuenta-personas-1.jpg"
+   ],
+   "franja": "servicios/cuenta-personas-banner.jpg"
+  },
+  {
+   "slug": "inventarios-y-gestion-de-colecciones",
+   "nombre": "Inventarios y gestión de colecciones",
+   "nombre_corto": "",
+   "bajada": "",
+   "linea": "productos-bibliotheca",
+   "orden": 90,
+   "parrafos": [
+    "Ofrecemos una amplia gama de herramientas tecnológicas diseñadas para realizar inventarios de manera rápida y gestionar grandes colecciones sin problemas. Los datos se capturan desde un dispositivo RFID inalámbrico integrado con tecnología Android. Este dispositivo es resistente, eficiente y cuenta con un potente alcance. Permite leer etiquetas RFID que se encuentren cerca de superficies metálicas.",
+    "Con esta herramienta, puede encontrar rápidamente libros faltantes, identificar y reposicionar materiales mal colocados, localizar reservas, realizar inventarios y restablecer la seguridad, todo en una sola pasada. Las alertas visuales y auditivas le notifican cuando se encuentra un elemento, mostrando su nombre. La alta duración de su batería permite estar en acción durante todo el tiempo que sea necesario, mientras que su velocidad de escaneo de 20 artículos por segundo garantiza una eficiencia máxima.",
+    "Además, permite la generación de informes y análisis sobre múltiples ubicaciones desde una única plataforma central."
+   ],
+   "lista_titulo": "",
+   "lista": [],
+   "enlace_texto": "Más información en Bibliotheca",
+   "enlace_url": "https://www.bibliotheca.com/library-technology-meet-the-new-dla-inventorywand/",
+   "foto": "servicios/inventarios-1.jpg",
+   "galeria": [],
+   "franja": "servicios/inventarios-banner.jpg"
+  },
+  {
+   "slug": "lockers-inteligentes",
+   "nombre": "Lockers inteligentes",
+   "nombre_corto": "",
+   "bajada": "",
+   "linea": "productos-bibliotheca",
+   "orden": 100,
+   "parrafos": [
+    "Diseñado para ampliar la cobertura y accesibilidad de la biblioteca, remoteLocker ofrece un cómodo autoservicio para recoger reservas, consultar el catálogo y hacer devoluciones.",
+    "El sistema modular se puede personalizar para cualquier biblioteca o espacio, incluso en exteriores. La pantalla de remoteLocker funciona como tablero para difundir mensajes a todos sus usuarios."
+   ],
+   "lista_titulo": "",
+   "lista": [],
+   "enlace_texto": "Más información en Bibliotheca",
+   "enlace_url": "https://www.bibliotheca.com/es-la/soluciones/lockers-de-retiro/",
+   "foto": "servicios/lockers-inteligentes-1.jpg",
+   "galeria": [
+    "servicios/lockers-inteligentes-2.jpg",
+    "servicios/lockers-inteligentes-3.jpg"
+   ],
+   "franja": "servicios/lockers-inteligentes-banner.jpg"
+  },
+  {
+   "slug": "portal-de-bibliotecas",
+   "nombre": "Portal de Bibliotecas",
+   "nombre_corto": "",
+   "bajada": "",
+   "linea": "plataformas-ia",
+   "orden": 110,
+   "parrafos": [
+    "Ofrecemos un servicio integral de diseño: nos encargamos de cada etapa del proceso, desde el diseño atractivo y funcional de tu sitio web hasta la implementación de las últimas tecnologías, integraciones y prácticas recomendadas.",
+    "Estamos comprometidos en brindarte el apoyo necesario para potenciar tu institución y alcanzar el éxito en el entorno digital. Contamos con un equipo multidisciplinario para abordar tu proyecto."
+   ],
+   "lista_titulo": "",
+   "lista": [],
+   "enlace_texto": "",
+   "enlace_url": "",
+   "foto": "servicios/portal-de-bibliotecas-1.jpg",
+   "galeria": [
+    "servicios/portal-de-bibliotecas-2.jpg",
+    "servicios/portal-de-bibliotecas-3.jpg"
+   ],
+   "franja": "servicios/portal-de-bibliotecas-banner.jpg"
+  },
+  {
+   "slug": "koha-instalacion-y-soporte",
+   "nombre": "Koha: instalación y soporte",
+   "nombre_corto": "",
+   "bajada": "",
+   "linea": "plataformas-ia",
+   "orden": 120,
+   "parrafos": [
+    "Koha es un sistema integrado de gestión de bibliotecas (SIGB) conocido por ser el primer software libre y de código abierto en el ámbito de la automatización bibliotecaria. 100 % web, cuenta con los principales módulos para desarrollar la gestión de una biblioteca o unidad de información.",
+    "Una de las características más destacadas de Koha es su enfoque colaborativo. El proyecto está respaldado por una comunidad global de desarrolladores y usuarios que colaboran para mejorar y mantener el software. Esto significa que las bibliotecas que utilizan Koha pueden beneficiarse de las contribuciones de la comunidad, así como adaptar y personalizar el sistema según sus necesidades específicas.",
+    "Koha ha sido adoptado por bibliotecas y organizaciones en todo el mundo debido a su naturaleza de software libre y código abierto, lo que brinda flexibilidad, control y la capacidad de personalizar el sistema según las necesidades locales. Además, el hecho de que sea de código abierto permite que se realicen auditorías de seguridad y se detecten y solucionen posibles problemas de manera más transparente."
+   ],
+   "lista_titulo": "",
+   "lista": [],
+   "enlace_texto": "Más información en la comunidad Koha",
+   "enlace_url": "https://koha-community.org/",
+   "foto": "servicios/koha-1.jpg",
+   "galeria": [
+    "servicios/koha-2.jpg"
+   ],
+   "franja": "servicios/koha-banner.jpg"
+  },
+  {
+   "slug": "buscador-bibliografias",
+   "nombre": "Buscador de Bibliografías",
+   "nombre_corto": "",
+   "bajada": "La bibliografía de cada asignatura, dentro del sistema de gestión de aprendizaje (LMS).",
+   "linea": "plataformas-ia",
+   "orden": 130,
+   "parrafos": [
+    "Con su cuenta institucional, cada estudiante ve la bibliografía básica y complementaria de sus asignaturas, con citas APA listas y acceso al recurso digital o al ejemplar físico.",
+    "Se integra a Canvas, Moodle o Blackboard (LTI 1.3) e incluye indicadores de uso para procesos de acreditación."
+   ],
+   "lista_titulo": "",
+   "lista": [],
+   "enlace_texto": "",
+   "enlace_url": "",
+   "foto": "servicios/buscador-bibliografias-1.jpg",
+   "galeria": [],
+   "franja": "servicios/buscador-bibliografias-banner.jpg"
+  },
+  {
+   "slug": "agente-biblioteca",
+   "nombre": "Biblioteca Agéntica",
+   "nombre_corto": "",
+   "bajada": "Tu biblioteca responde las 24 horas.",
+   "linea": "plataformas-ia",
+   "orden": 140,
+   "parrafos": [
+    "Un agente de inteligencia artificial que atiende a tus estudiantes en cualquier momento, conectado en tiempo real a tu software de gestión y a tu portal institucional.",
+    "Consulta la disponibilidad por sede, las bibliografías y los recursos digitales antes de responder, sin inventar datos. Además, orienta al estudiante sin hacerle las tareas."
+   ],
+   "lista_titulo": "",
+   "lista": [],
+   "enlace_texto": "",
+   "enlace_url": "",
+   "foto": "servicios/agente-biblioteca-1.jpg",
+   "galeria": [],
+   "franja": "servicios/agente-biblioteca-banner.jpg"
+  },
+  {
+   "slug": "visor-libro-ia",
+   "nombre": "Visor de PDF",
+   "nombre_corto": "",
+   "bajada": "El estudiante no sale del libro para estudiarlo.",
+   "linea": "plataformas-ia",
+   "orden": 150,
+   "parrafos": [
+    "Convierte cada libro digital de tu colección en una herramienta activa de estudio. La lectura es en línea, página a página. El estudiante puede tomar notas, resaltar, poner marcadores, generar la cita bibliográfica de cada página y mucho más.",
+    "La descarga y la impresión de fragmentos se habilitan solo en los límites que fija la licencia de cada título."
+   ],
+   "lista_titulo": "",
+   "lista": [],
+   "enlace_texto": "",
+   "enlace_url": "",
+   "foto": "servicios/visor-libro-ia-1.jpg",
+   "galeria": [],
+   "franja": "servicios/visor-libro-ia-banner.jpg"
+  }
+ ],
+ "clientes": [
+  {
+   "nombre": "Pontificia Universidad Católica de Chile",
+   "logo": "clientes/uc.jpg",
+   "orden": 10
+  },
+  {
+   "nombre": "Servicio de Impuestos Internos",
+   "logo": "clientes/sii.jpg",
+   "orden": 20
+  },
+  {
+   "nombre": "Universidad San Sebastián",
+   "logo": "clientes/uss.jpg",
+   "orden": 30
+  },
+  {
+   "nombre": "Universidad de Concepción",
+   "logo": "clientes/udec.jpg",
+   "orden": 40
+  },
+  {
+   "nombre": "Universidad Bernardo O’Higgins",
+   "logo": "clientes/ubo.jpg",
+   "orden": 50
+  },
+  {
+   "nombre": "Universidad de O’Higgins",
+   "logo": "clientes/uoh.jpg",
+   "orden": 60
+  },
+  {
+   "nombre": "Universidad Alberto Hurtado",
+   "logo": "clientes/uah.jpg",
+   "orden": 70
+  },
+  {
+   "nombre": "Universidad Central",
+   "logo": "clientes/ucen.jpg",
+   "orden": 80
+  },
+  {
+   "nombre": "Universidad Católica de la Santísima Concepción",
+   "logo": "clientes/ucsc.jpg",
+   "orden": 90
+  },
+  {
+   "nombre": "Universidad Autónoma de Chile",
+   "logo": "clientes/uautonoma.jpg",
+   "orden": 100
+  },
+  {
+   "nombre": "Centro de Formación Técnica ENAC",
+   "logo": "clientes/enac.jpg",
+   "orden": 110
+  },
+  {
+   "nombre": "CFT San Agustín",
+   "logo": "clientes/cft-san-agustin.jpg",
+   "orden": 120
+  },
+  {
+   "nombre": "Instituto de Banca y Finanzas Subercaseaux",
+   "logo": "clientes/subercaseaux.jpg",
+   "orden": 130
+  },
+  {
+   "nombre": "Centro de Formación Técnica ProAndes",
+   "logo": "clientes/proandes.jpg",
+   "orden": 140
+  },
+  {
+   "nombre": "AIEP de la Universidad Andrés Bello",
+   "logo": "clientes/aiep.jpg",
+   "orden": 150
+  },
+  {
+   "nombre": "Facultad de Medicina de la Universidad de Chile",
+   "logo": "clientes/medicina-uchile.jpg",
+   "orden": 160
+  },
+  {
+   "nombre": "Universidad de los Andes",
+   "logo": "clientes/uandes.jpg",
+   "orden": 170
+  },
+  {
+   "nombre": "Iplacex",
+   "logo": "clientes/iplacex.jpg",
+   "orden": 180
+  },
+  {
+   "nombre": "Universidad del Alba",
+   "logo": "clientes/ualba.jpg",
+   "orden": 190
+  }
+ ],
+ "paginas": [
+  {
+   "slug": "inicio",
+   "titulo": "Inicio",
+   "padre": null,
+   "parrafos": [],
+   "extracto": ""
+  },
+  {
+   "slug": "quienes-somos",
+   "titulo": "Quiénes somos",
+   "padre": null,
+   "parrafos": [
+    "Digital G+ es una empresa de consultoría formada por un grupo de profesionales interdisciplinarios que incluyen principalmente bibliotecarios documentalistas especializados en brindar un servicio y asistencia técnica en diferentes áreas de unidades de información que realizan gestión documental y bibliográfica.",
+    "Nuestro principal objetivo es proporcionar servicios de calidad que contribuyan a mejorar la gestión y la experiencia de sus usuarios."
+   ],
+   "extracto": "Digital G+ es una empresa de consultoría formada por bibliotecarios documentalistas especializados en gestión documental y bibliográfica."
+  },
+  {
+   "slug": "nuestros-servicios",
+   "titulo": "Nuestros servicios",
+   "padre": null,
+   "parrafos": [],
+   "extracto": "Digitalización, productos Bibliotheca y plataformas con IA para bibliotecas e instituciones educativas en Chile."
+  },
+  {
+   "slug": "nuestros-clientes",
+   "titulo": "Nuestros clientes",
+   "padre": null,
+   "parrafos": [],
+   "extracto": "Universidades, institutos, centros de formación técnica e instituciones públicas que confían en Digital G+."
+  },
+  {
+   "slug": "contacto",
+   "titulo": "Contacto",
+   "padre": null,
+   "parrafos": [],
+   "extracto": "Solicita una cotización a Digital G+: escríbenos a contacto@digitalgmas.cl, llámanos al +56 9 7389 1319 o completa el formulario."
+  },
+  {
+   "slug": "gracias",
+   "titulo": "Solicitud enviada",
+   "padre": "contacto",
+   "parrafos": [],
+   "extracto": ""
+  }
+ ],
+ "opciones_imagen": {
+  "hero_imagen": "servicios/auto-prestamo-1.jpg",
+  "nosotros_imagen": "lineas/equipo.jpg",
+  "partner_foto_1": "servicios/lockers-inteligentes-1.jpg",
+  "partner_foto_2": "servicios/inventarios-1.jpg"
+ }
+}

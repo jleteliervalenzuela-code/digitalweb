@@ -1,0 +1,39 @@
+/* =============================================================
+   Ajustes solo para la versión WordPress (se agregan al final de
+   estilos.css al construir el tema)
+   ============================================================= */
+
+/* Con la barra de administración visible (usuario con sesión iniciada) */
+.admin-bar .cabecera { top: 32px; }
+.admin-bar .menu-movil { inset: calc(var(--cabecera) + 32px) 0 0 0; }
+@media (max-width: 782px) {
+  .admin-bar .cabecera { top: 46px; }
+  .admin-bar .menu-movil { inset: calc(var(--cabecera) + 46px) 0 0 0; }
+}
+@media (max-width: 600px) {
+  /* En teléfonos la barra de WordPress no queda fija */
+  .admin-bar .cabecera { top: 0; }
+}
+
+/* Clase de WordPress para texto solo para lectores de pantalla */
+.screen-reader-text {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0);
+  white-space: nowrap; border: 0;
+}
+
+/* Bloques de misión, visión y equipo cuando tienen texto */
+.titulo-bloque { font-size: var(--t-xl); margin-bottom: var(--e-3); }
+
+/* Dirección y horario en Contacto */
+.canal--texto { align-items: flex-start; }
+.canal--texto strong { margin-top: var(--e-2); }
+.canal--texto strong:first-child { margin-top: 0; }
+
+/* Contenido escrito en el editor de WordPress */
+.prosa ul:not(.lista-check), .prosa ol { margin: 0 0 1em; }
+.prosa li + li { margin-top: 0.35em; }
+.prosa a:not(.boton) { text-decoration: underline; }
+.prosa img { border-radius: var(--r-m); }

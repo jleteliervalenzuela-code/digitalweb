@@ -183,7 +183,18 @@ Detalle completo: `docs/migracion.md`.
 
 ---
 
-## 9. Documentación del proyecto
+## 9. Versión WordPress
+
+La carpeta `wordpress-tema/` contiene la misma web como **tema de WordPress** (sin plugins), para instalarla en un servidor propio:
+
+- `wordpress-tema/digitalgmas.zip`: el archivo que se sube en WordPress.
+- `wordpress-tema/INSTALAR.md`: guía de instalación paso a paso.
+- `wordpress-tema/digitalgmas/`: el código del tema (plantillas PHP, campos, importador).
+- `wordpress-tema/construir.py`: vuelve a armar el tema y el .zip a partir de `src/` (diseño y contenido compartidos con la versión estática). Uso: `python3 wordpress-tema/construir.py`.
+
+Una vez que el sitio viva en WordPress, el contenido se edita en el panel de WordPress; los cambios hechos allí no vuelven a los archivos JSON de este repositorio.
+
+## 10. Documentación del proyecto
 
 | Archivo | Contenido |
 |---|---|
