@@ -27,6 +27,11 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+        env:
+          # Carpeta donde vive el sitio. Mientras se usa la dirección de GitHub
+          # (jleteliervalenzuela-code.github.io/digitalweb/) debe ser /digitalweb/.
+          # Al conectar el dominio digitalgmas.cl, cámbiala a: /
+          RUTA_BASE: /digitalweb/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

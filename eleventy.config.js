@@ -7,10 +7,14 @@
 // =============================================================
 
 import Image from "@11ty/eleventy-img";
+import { HtmlBasePlugin } from "@11ty/eleventy";
 import path from "node:path";
 import fs from "node:fs";
 
 export default function (eleventyConfig) {
+  // Antepone la carpeta base (pathPrefix, más abajo) a los enlaces e imágenes del HTML
+  eleventyConfig.addPlugin(HtmlBasePlugin);
+
   // --- Archivos que se copian tal cual al sitio final ---------
   eleventyConfig.addPassthroughCopy({ "src/assets/fonts": "assets/fonts" });
   eleventyConfig.addPassthroughCopy({ "src/assets/css": "assets/css" });
@@ -90,6 +94,11 @@ export default function (eleventyConfig) {
   );
 
   return {
+    // Carpeta base del sitio. En GitHub Pages sin dominio propio el sitio vive en
+    // /digitalweb/; con digitalgmas.cl vive en /. Se define con la variable RUTA_BASE
+    // (ver .github/workflows/publicar.yml). Eleventy antepone esta ruta a todos los
+    // enlaces e imágenes del HTML que empiezan con "/".
+    pathPrefix: process.env.RUTA_BASE || "/",
     dir: { input: "src", output: "_site", includes: "_includes", data: "_data" },
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",

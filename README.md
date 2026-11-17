@@ -129,8 +129,15 @@ La primera compilación tarda alrededor de un minuto porque genera las imágenes
    ```
 2. En el repositorio: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 3. El flujo `.github/workflows/publicar.yml` compila y publica. Revisa el avance en la pestaña **Actions**.
-4. **Dominio propio** (Settings → Pages → Custom domain: `digitalgmas.cl`). En el proveedor del dominio, apunta los registros DNS según la guía oficial de GitHub ([docs.github.com → Managing a custom domain](https://docs.github.com/es/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)): registros `A` del dominio raíz hacia las IP de GitHub Pages y `CNAME` de `www` hacia `<usuario>.github.io`. Luego activa **Enforce HTTPS**.
+4. **Dominio propio** (Settings → Pages → Custom domain: `digitalgmas.cl`; recuerda cambiar `RUTA_BASE` a `/`, ver más abajo). En el proveedor del dominio, apunta los registros DNS según la guía oficial de GitHub ([docs.github.com → Managing a custom domain](https://docs.github.com/es/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)): registros `A` del dominio raíz hacia las IP de GitHub Pages y `CNAME` de `www` hacia `<usuario>.github.io`. Luego activa **Enforce HTTPS**.
 5. Cambiar el DNS desconecta el WordPress actual. Antes de hacerlo, revisa la lista de la sección 8.
+
+### Dirección de GitHub y dominio propio (`RUTA_BASE`)
+Mientras el sitio se publica en `https://jleteliervalenzuela-code.github.io/digitalweb/`, todas sus rutas deben empezar con `/digitalweb/`. Eso lo define la línea `RUTA_BASE: /digitalweb/` de `.github/workflows/publicar.yml`.
+
+**Al conectar `digitalgmas.cl`, cambia esa línea a `RUTA_BASE: /`** en el mismo commit en que configuras el dominio. Si no, el sitio se verá sin estilos ni imágenes en el dominio propio.
+
+Para probarlo en tu computador como en GitHub: `RUTA_BASE=/digitalweb/ npx @11ty/eleventy --serve` y abre `http://localhost:8080/digitalweb/`.
 
 ### Cambios posteriores
 Cada `git push` a `main` vuelve a publicar automáticamente en uno o dos minutos.
