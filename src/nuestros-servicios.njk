@@ -1,0 +1,44 @@
+---
+layout: base.njk
+title: Nuestros servicios
+seccionMenu: servicios
+description: "Digitalización, productos Bibliotheca y plataformas con IA para bibliotecas e instituciones educativas en Chile."
+---
+{#- Página que lista los 15 servicios agrupados en sus 3 líneas.
+    Todo sale de src/_data/servicios.json. -#}
+<div class="contenedor">
+  <nav class="migas" aria-label="Ruta de navegación">
+    <ol><li><a href="/">Inicio</a></li><li aria-current="page">Servicios</li></ol>
+  </nav>
+</div>
+
+<section class="cabeza-pagina">
+  <div class="contenedor">
+    <p class="antetitulo">Qué hacemos</p>
+    <h1>Nuestros servicios</h1>
+    <div class="acciones">
+      {%- for linea in servicios.lineas %}
+      <a class="boton boton--secundario boton--chico" href="#{{ linea.id }}">{{ linea.nombre }}</a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+{%- for linea in servicios.lineas %}
+<section class="seccion {{ 'seccion--blanca' if loop.index is odd else '' }}" id="{{ linea.id }}" aria-labelledby="titulo-{{ linea.id }}">
+  <div class="contenedor">
+    <div class="encabezado revelar">
+      <h2 id="titulo-{{ linea.id }}">{{ linea.nombre }}</h2>
+      <p class="bajada">{{ linea.descripcion }}</p>
+    </div>
+    <div class="rejilla rejilla--3">
+      {#- asyncEach (y no for) porque la tarjeta usa el atajo de imagen, que es asíncrono #}
+      {%- asyncEach s in servicios.items | deLinea(linea.id) %}
+      {% include "parciales/tarjeta-servicio.njk" %}
+      {%- endeach %}
+    </div>
+  </div>
+</section>
+{%- endfor %}
+
+{% include "parciales/cierre.njk" %}

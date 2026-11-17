@@ -1,0 +1,110 @@
+---
+layout: base.njk
+title: Contacto
+seccionMenu: contacto
+description: "Solicita una cotización a Digital G+: escríbenos a contacto@digitalgmas.cl, llámanos al +56 9 7389 1319 o completa el formulario."
+---
+{#- =============================================================
+    CONTACTO
+    El formulario envía los mensajes a contacto@digitalgmas.cl
+    mediante FormSubmit (configuración en src/_data/sitio.json →
+    "formulario"). La validación y el envío sin recargar la página
+    están en src/assets/js/sitio.js. Sin JavaScript, el formulario
+    igual funciona: FormSubmit recibe el envío y vuelve a /contacto/gracias/.
+    ============================================================= -#}
+<div class="contenedor">
+  <nav class="migas" aria-label="Ruta de navegación">
+    <ol><li><a href="/">Inicio</a></li><li aria-current="page">Contacto</li></ol>
+  </nav>
+</div>
+
+<section class="cabeza-pagina">
+  <div class="contenedor">
+    <p class="antetitulo">Contacto</p>
+    <h1>Solicita una cotización</h1>
+    <p class="bajada">Cuéntanos qué necesita tu biblioteca y te responderemos a la brevedad.</p>
+  </div>
+</section>
+
+<section class="seccion seccion--sin-arriba" aria-label="Formulario y canales de contacto">
+  <div class="contenedor contacto">
+    <form class="formulario" action="{{ sitio.formulario.accion }}" method="POST" novalidate data-formulario>
+      {#- Campos de configuración de FormSubmit #}
+      <input type="hidden" name="_subject" value="{{ sitio.formulario.asunto }}">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="{{ sitio.url }}/contacto/gracias/">
+      {#- Trampa para robots: los humanos no la ven ni la llenan #}
+      <div class="trampa" aria-hidden="true">
+        <label for="campo-web">No llenar este campo</label>
+        <input type="text" id="campo-web" name="_honey" tabindex="-1" autocomplete="off">
+      </div>
+
+      <div class="campos">
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" autocomplete="name" required maxlength="120" aria-describedby="error-nombre">
+          <span class="campo__error" id="error-nombre" aria-live="polite"></span>
+        </div>
+        <div class="campo">
+          <label for="correo">Correo electrónico</label>
+          <input id="correo" name="email" type="email" autocomplete="email" inputmode="email" spellcheck="false" required maxlength="160" placeholder="nombre@institucion.cl" aria-describedby="error-correo">
+          <span class="campo__error" id="error-correo" aria-live="polite"></span>
+        </div>
+        <div class="campo">
+          <label for="institucion">Institución <span class="opcional">(opcional)</span></label>
+          <input id="institucion" name="institucion" type="text" autocomplete="organization" maxlength="160">
+        </div>
+        <div class="campo">
+          <label for="cargo">Cargo <span class="opcional">(opcional)</span></label>
+          <input id="cargo" name="cargo" type="text" autocomplete="organization-title" maxlength="120">
+        </div>
+        <div class="campo">
+          <label for="telefono">Teléfono <span class="opcional">(opcional)</span></label>
+          <input id="telefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel" maxlength="30" placeholder="+56 9 …">
+        </div>
+        <div class="campo">
+          <label for="servicio">Servicio de interés <span class="opcional">(opcional)</span></label>
+          <select id="servicio" name="servicio">
+            <option value="">Selecciona un servicio</option>
+            {%- for linea in servicios.lineas %}
+            <optgroup label="{{ linea.nombre }}">
+              {%- for s in servicios.items | deLinea(linea.id) %}
+              <option value="{{ s.nombre }}" data-slug="{{ s.slug }}">{{ s.nombreCorto or s.nombre }}</option>
+              {%- endfor %}
+            </optgroup>
+            {%- endfor %}
+            <option value="Otro">Otro</option>
+          </select>
+        </div>
+        <div class="campo campo--ancho">
+          <label for="consulta">Consulta</label>
+          <textarea id="consulta" name="consulta" required minlength="10" maxlength="4000" aria-describedby="error-consulta"></textarea>
+          <span class="campo__error" id="error-consulta" aria-live="polite"></span>
+        </div>
+      </div>
+
+      <div class="formulario__pie">
+        <p class="formulario__nota">Tu mensaje llega por correo a {{ sitio.nombre }} a través del servicio externo {{ sitio.formulario.proveedor }}. Usaremos tus datos solo para responder esta solicitud.</p>
+        <button class="boton boton--principal" type="submit">Enviar solicitud {% icono "arrow-right" %}</button>
+      </div>
+      <div class="formulario__estado" role="status" aria-live="polite" data-estado></div>
+    </form>
+
+    <div class="canales">
+      <a class="canal" href="https://wa.me/{{ sitio.contacto.whatsapp }}?text={{ sitio.contacto.whatsappMensaje | urlencode }}" target="_blank" rel="noopener">
+        <span class="canal__icono canal__icono--wa">{% icono "whatsapp" %}</span>
+        <span><strong>WhatsApp</strong><span>{{ sitio.contacto.telefono }}</span><span class="solo-lectores"> (se abre en una pestaña nueva)</span></span>
+      </a>
+      <a class="canal" href="tel:{{ sitio.contacto.telefonoEnlace }}">
+        <span class="canal__icono">{% icono "phone" %}</span>
+        <span><strong>Teléfono</strong><span>{{ sitio.contacto.telefono }}</span></span>
+      </a>
+      <a class="canal" href="mailto:{{ sitio.contacto.correo }}">
+        <span class="canal__icono">{% icono "mail" %}</span>
+        <span><strong>Correo</strong><span>{{ sitio.contacto.correo }}</span></span>
+      </a>
+      {%- set queFalta = "Dirección y horario de atención, si se quieren mostrar." %}{% include "parciales/pendiente.njk" %}
+    </div>
+  </div>
+</section>

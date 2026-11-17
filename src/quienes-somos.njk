@@ -1,0 +1,57 @@
+---
+layout: base.njk
+title: Quiénes somos
+seccionMenu: quienes-somos
+description: "Digital G+ es una empresa de consultoría formada por bibliotecarios documentalistas especializados en gestión documental y bibliográfica."
+---
+{#- Textos: src/_data/sitio.json → "quienesSomos" -#}
+<div class="contenedor">
+  <nav class="migas" aria-label="Ruta de navegación">
+    <ol><li><a href="/">Inicio</a></li><li aria-current="page">Quiénes somos</li></ol>
+  </nav>
+</div>
+
+<section class="cabeza-pagina">
+  <div class="contenedor">
+    <p class="antetitulo">{{ sitio.nombre }}</p>
+    <h1>{{ sitio.quienesSomos.titulo }}</h1>
+  </div>
+</section>
+
+<section class="seccion seccion--sin-arriba" aria-label="Presentación">
+  <div class="contenedor dividido">
+    <div class="prosa">
+      {%- for p in sitio.quienesSomos.texto %}
+      <p>{{ p }}</p>
+      {%- endfor %}
+      <div class="acciones">
+        <a class="boton boton--principal" href="/nuestros-servicios/">Ver servicios</a>
+      </div>
+    </div>
+    <div class="marco marco--cuadrado">
+      {% imagen "lineas/equipo.png", "Profesionales trabajando con computadores portátiles", "(min-width: 56rem) 50vw, 92vw", { prioridad: true, anchos: [480, 700] } %}
+    </div>
+  </div>
+</section>
+
+{%- if sitio.mostrarPendientes %}
+<section class="seccion seccion--blanca" aria-label="Contenido pendiente">
+  <div class="contenedor rejilla rejilla--3">
+    {%- set queFalta = "Misión. El sitio anterior no tenía este texto." %}{% include "parciales/pendiente.njk" %}
+    {%- set queFalta = "Visión. El sitio anterior no tenía este texto." %}{% include "parciales/pendiente.njk" %}
+    {%- set queFalta = "Equipo: nombres, cargos y fotos de los socios, si se quieren mostrar." %}{% include "parciales/pendiente.njk" %}
+  </div>
+</section>
+{%- endif %}
+
+<section class="seccion oscuro" aria-labelledby="titulo-partner">
+  <div class="contenedor encabezado encabezado--centro encabezado--solo revelar">
+    <img class="banda-partner__logo banda-partner__logo--centro" src="/assets/img/marca/bibliotheca-blanco.png" alt="Bibliotheca" width="620" height="99" loading="lazy">
+    <h2 id="titulo-partner">{{ sitio.partner.titulo }}</h2>
+    <div class="acciones">
+      <a class="boton boton--claro" href="/nuestros-servicios/#productos-bibliotheca">Ver productos Bibliotheca {% icono "arrow-right" %}</a>
+    </div>
+  </div>
+</section>
+
+{% include "parciales/cierre.njk" %}

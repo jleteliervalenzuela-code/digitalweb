@@ -1,0 +1,50 @@
+{
+  "nombre": "Digital G+",
+  "url": "https://digitalgmas.cl",
+  "idioma": "es-CL",
+  "lema": "Asistencia bibliotecaria de calidad",
+  "descripcion": "Digital G+ es una consultora de bibliotecarios y documentalistas. Digitalización, productos Bibliotheca y plataformas con IA para bibliotecas e instituciones educativas en Chile.",
+  "gtm": "GTM-PCLFRV6",
+  "contacto": {
+    "correo": "contacto@digitalgmas.cl",
+    "telefono": "+56 9 7389 1319",
+    "telefonoEnlace": "+56973891319",
+    "whatsapp": "56973891319",
+    "whatsappMensaje": "Hola, quiero solicitar una cotización a Digital G+.",
+    "direccion": "[PENDIENTE]",
+    "horario": "[PENDIENTE]"
+  },
+  "redes": [],
+  "formulario": {
+    "_ayuda": "Servicio gratuito que reenvía cada mensaje al correo. Después de activar FormSubmit (ver README), reemplaza el correo de 'accion' por la cadena aleatoria que te entregan, para no exponer el correo a robots.",
+    "proveedor": "FormSubmit",
+    "accion": "https://formsubmit.co/contacto@digitalgmas.cl",
+    "asunto": "Nueva solicitud desde digitalgmas.cl"
+  },
+  "inicio": {
+    "_nota": "titulo y bajada son textos NUEVOS (el sitio anterior no tenía h1). Ver docs/textos-nuevos.md",
+    "antetitulo": "Partner Bibliotheca",
+    "titulo": "Consultoría, tecnología y digitalización para bibliotecas",
+    "bajada": "Somos una empresa de consultoría formada por bibliotecarios documentalistas y distribuidor de Bibliotheca en Chile.",
+    "imagen": "servicios/auto-prestamo-1.jpg",
+    "imagenAlt": "Usuaria de una biblioteca registra su préstamo en un equipo de autopréstamo de Bibliotheca"
+  },
+  "quienesSomos": {
+    "titulo": "Quiénes somos",
+    "texto": [
+      "Digital G+ es una empresa de consultoría formada por un grupo de profesionales interdisciplinarios que incluyen principalmente bibliotecarios documentalistas especializados en brindar un servicio y asistencia técnica en diferentes áreas de unidades de información que realizan gestión documental y bibliográfica.",
+      "Nuestro principal objetivo es proporcionar servicios de calidad que contribuyan a mejorar la gestión y la experiencia de sus usuarios."
+    ],
+    "mision": "[PENDIENTE]",
+    "vision": "[PENDIENTE]",
+    "equipo": "[PENDIENTE]"
+  },
+  "partner": {
+    "titulo": "Somos distribuidor de Bibliotheca en Chile",
+    "url": "https://www.bibliotheca.com/es-la/"
+  },
+  "mostrarPendientes": true,
+  "clientes": {
+    "titulo": "Ellos confían en nosotros"
+  }
+}

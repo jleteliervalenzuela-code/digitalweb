@@ -1,0 +1,338 @@
+{
+  "lineas": [
+    {
+      "id": "digitalizacion",
+      "nombre": "Digitalización",
+      "imagen": "servicios/digitalizacion-bibliografias-1.jpg",
+      "imagenAlt": "Libro digitalizado visto en un computador portátil, una tableta y un teléfono",
+      "descripcion": "Grupo de profesionales interdisciplinarios en gestión documental y bibliográfica."
+    },
+    {
+      "id": "productos-bibliotheca",
+      "nombre": "Productos Bibliotheca",
+      "imagen": "servicios/estanterias-inteligentes-1.jpg",
+      "imagenAlt": "Usuario devuelve un libro en una estantería inteligente de Bibliotheca",
+      "descripcion": "Somos distribuidor de Bibliotheca en Chile."
+    },
+    {
+      "id": "plataformas-ia",
+      "nombre": "Plataformas y productos con IA",
+      "imagen": "servicios/agente-biblioteca-1.png",
+      "imagenAlt": "Pantallas de la Biblioteca Agéntica: un asistente conversacional responde consultas de estudiantes con datos de la biblioteca",
+      "descripcion": "Súmate al cambio y adopta las herramientas de transformación digital."
+    }
+  ],
+  "items": [
+    {
+      "slug": "digitalizacion-bibliografias",
+      "linea": "digitalizacion",
+      "nombre": "Digitalización de bibliografías",
+      "parrafos": [
+        "La digitalización de bibliografías es un servicio especializado para bibliotecas que mejorará el acceso y la disponibilidad de los recursos bibliográficos, permitiendo a los usuarios acceder de manera más eficiente y cómoda en su proceso de estudio e investigación académica."
+      ],
+      "lista": {
+        "titulo": "Entre las acciones que contempla el servicio",
+        "items": [
+          "Desempaste y empaste de libros.",
+          "Escaneo y captura de imágenes con OCR.",
+          "Procesamiento de las imágenes: las imágenes digitalizadas son sometidas a un proceso de optimización y edición para asegurar una reproducción clara y legible en el caso de que el material presente textos y/o contenido adicional.",
+          "Conversión de PDF a un formato seguro según requerimientos de la legislación actual Ley 17.336 Art. 71 K.",
+          "Creación de índices.",
+          "Indicadores de uso."
+        ]
+      },
+      "banner": "servicios/digitalizacion-bibliografias-banner.jpg",
+      "imagenes": [
+        {
+          "src": "servicios/digitalizacion-bibliografias-1.jpg",
+          "alt": "Libro digitalizado visto en un computador portátil, una tableta y un teléfono"
+        },
+        {
+          "src": "servicios/digitalizacion-bibliografias-2.jpg",
+          "alt": "Visor de un libro digitalizado con tabla de contenidos y páginas enfrentadas"
+        }
+      ]
+    },
+    {
+      "slug": "digitalizacion-de-documentos",
+      "linea": "digitalizacion",
+      "nombre": "Digitalización de documentos",
+      "parrafos": [
+        "Este servicio está orientado a instituciones y empresas que requieran digitalizar sus documentos para su conservación, optimización de espacios físicos, mejorar el acceso, entre otros.",
+        "Además del escaneo de los documentos, ofrecemos soluciones tecnológicas personalizadas y flexibles, diseñadas para optimizar la gestión documental."
+      ],
+      "banner": "servicios/digitalizacion-de-documentos-banner.jpg",
+      "imagenes": []
+    },
+    {
+      "slug": "digitalizacion-material-patrimonial",
+      "linea": "digitalizacion",
+      "nombre": "Digitalización de documentos históricos y patrimoniales",
+      "nombreCorto": "Documentos históricos y patrimoniales",
+      "parrafos": [
+        "La digitalización de documentos históricos y patrimoniales tiene como objetivo preservar, facilitar el acceso, difusión, y protección de posibles daños o pérdidas. Esta práctica se ha vuelto cada vez más importante en el ámbito de la preservación del patrimonio cultural y la gestión de archivos."
+      ],
+      "lista": {
+        "titulo": "Entre las acciones que contempla el servicio",
+        "items": [
+          "Evaluación de especialistas en el área de conservación y restauración.",
+          "Preparación física del material.",
+          "Escaneo y captura de imágenes con OCR.",
+          "Procesamiento de las imágenes: puede incluir ajustes de contraste, eliminación de manchas o raspaduras, corrección de inclinación, entre otros."
+        ]
+      },
+      "banner": "servicios/digitalizacion-material-patrimonial-banner.jpg",
+      "imagenes": []
+    },
+    {
+      "slug": "antenas-de-seguridad-rfid",
+      "linea": "productos-bibliotheca",
+      "nombre": "Antenas de seguridad (RFID)",
+      "parrafos": [
+        "El lugar seguro no sólo debe priorizar la seguridad, sino también brindar un entorno agradable y estéticamente atractivo. Es de gran importancia lograr un equilibrio entre la protección de su inversión y la apariencia visual de su biblioteca. Es por eso que las puertas de seguridad están diseñadas específicamente para ofrecer características innovadoras que aseguran sus materiales sin comprometer el ambiente acogedor de su espacio.",
+        "Desde las puertas Tattle-Tape hasta las soluciones RFID, todas nuestras opciones de seguridad están diseñadas para adaptarse a diferentes necesidades y tecnologías: RFID, de ultra alta frecuencia (UHF) y electromagnética (EM)."
+      ],
+      "enlace": {
+        "texto": "Más información en Bibliotheca",
+        "url": "https://www.bibliotheca.com/es-la/soluciones/deteccion-de-seguridad/"
+      },
+      "banner": "servicios/antenas-de-seguridad-rfid-banner.jpg",
+      "imagenes": []
+    },
+    {
+      "slug": "auto-prestamo",
+      "linea": "productos-bibliotheca",
+      "nombre": "Auto préstamo",
+      "parrafos": [
+        "Incorpora en tu biblioteca la mejor experiencia de préstamo y devolución para tus usuarios, con una interfaz intuitiva y muy sencilla de utilizar, sin importar la tecnología que utilice tu biblioteca: RFID, EM o códigos de barras.",
+        "Contamos con variados modelos y configuraciones disponibles, con características audibles, visuales, táctiles y de texto, entre otras, para crear la mejor experiencia de usuario para tu biblioteca."
+      ],
+      "enlace": {
+        "texto": "Más información en Bibliotheca",
+        "url": "https://www.bibliotheca.com/es-la/soluciones/prestamo-autoservicio/"
+      },
+      "banner": "servicios/auto-prestamo-banner.jpg",
+      "imagenes": [
+        {
+          "src": "servicios/auto-prestamo-1.jpg",
+          "alt": "Usuaria de una biblioteca registra su préstamo en un equipo de autopréstamo de Bibliotheca"
+        }
+      ]
+    },
+    {
+      "slug": "auto-prestamo-desde-el-movil",
+      "linea": "productos-bibliotheca",
+      "nombre": "Auto préstamo desde el móvil (cloudLibrary)",
+      "nombreCorto": "Auto préstamo desde el móvil",
+      "parrafos": [
+        "Los préstamos desde la aplicación cloudLibrary permitirán a sus usuarios gestionar sus préstamos directamente desde la palma de la mano. Mediante el escaneo del código de barras de un libro con la cámara de un dispositivo móvil, un simple toque en el botón de préstamo y luego la desactivación de la seguridad, los usuarios podrán gestionar su préstamo.",
+        "El préstamo desde cloudLibrary no sólo facilita el préstamo de una forma autónoma y sencilla, sino que también permite a las bibliotecas promocionar información importante a su comunidad académica mediante notificaciones. Esto permite una comunicación efectiva y oportuna con los usuarios, manteniéndolos informados sobre actividades y nuevos recursos y servicios que incorpora la biblioteca.",
+        "El préstamo desde cloudLibrary es compatible con tecnología RFID, EM o de códigos de barras."
+      ],
+      "enlace": {
+        "texto": "Más información en Bibliotheca",
+        "url": "https://www.bibliotheca.com/es-la/soluciones/prestamo-movil/"
+      },
+      "banner": "servicios/auto-prestamo-desde-el-movil-banner.jpg",
+      "imagenes": [
+        {
+          "src": "servicios/auto-prestamo-desde-el-movil-1.jpg",
+          "alt": "Tres teléfonos muestran la aplicación cloudLibrary: escaneo del código de barras de un libro y confirmación del préstamo"
+        }
+      ]
+    },
+    {
+      "slug": "estanterias-inteligentes",
+      "linea": "productos-bibliotheca",
+      "nombre": "Estanterías inteligentes",
+      "parrafos": [
+        "Esta tecnología permite a los usuarios experimentar un proceso rápido en la devolución de sus materiales, al mismo tiempo que tienen acceso a una colección que recién ha sido devuelta. Por otro lado, las devoluciones automatizadas reducen el tiempo que el personal bibliotecario dedica a ingresar y reorganizar material en los estantes, lo que les permite tener más tiempo para interacciones significativas con los usuarios.",
+        "Una de las principales características de esta tecnología es que cuenta con un tamaño reducido y una instalación sencilla, lo que la convierte en la opción ideal para bibliotecas que desean implementar un sistema de devolución automática sin incurrir en altos costos de inversión y sin requerir un espacio significativo, como una solución completa de manipulación automatizada de materiales."
+      ],
+      "enlace": {
+        "texto": "Más información en Bibliotheca",
+        "url": "https://www.bibliotheca.com/es-la/soluciones/estantes-inteligentes-de-devolucion/"
+      },
+      "banner": "servicios/estanterias-inteligentes-banner.jpg",
+      "imagenes": [
+        {
+          "src": "servicios/estanterias-inteligentes-1.jpg",
+          "alt": "Usuario devuelve un libro en una estantería inteligente de Bibliotheca"
+        }
+      ]
+    },
+    {
+      "slug": "cuenta-personas-y-analisis-de-datos",
+      "linea": "productos-bibliotheca",
+      "nombre": "Cuenta personas y análisis de datos",
+      "parrafos": [
+        "El sistema de conteo de personas open+ count utiliza cámaras inteligentes que cuentan en forma anónima y precisa a quienes entran y salen de la biblioteca. open+ count también proporciona datos estratégicos e informes de uso para ayudar a las bibliotecas a tomar decisiones basadas en datos sobre el uso futuro del espacio de la biblioteca.",
+        "Además de gestionar la ocupación, se puede utilizar en múltiples áreas dentro de la biblioteca para analizar patrones de uso."
+      ],
+      "enlace": {
+        "texto": "Más información en Bibliotheca",
+        "url": "https://www.bibliotheca.com/es-la/soluciones/ocupacion-cumplimiento/"
+      },
+      "banner": "servicios/cuenta-personas-banner.jpg",
+      "imagenes": [
+        {
+          "src": "servicios/cuenta-personas-2.jpg",
+          "alt": "Panel de open+ count en un computador portátil con un gráfico de visitas por hora"
+        },
+        {
+          "src": "servicios/cuenta-personas-1.jpg",
+          "alt": "Vista cenital de la cámara de open+ count detectando a una persona en el acceso de la biblioteca"
+        }
+      ]
+    },
+    {
+      "slug": "inventarios-y-gestion-de-colecciones",
+      "linea": "productos-bibliotheca",
+      "nombre": "Inventarios y gestión de colecciones",
+      "parrafos": [
+        "Ofrecemos una amplia gama de herramientas tecnológicas diseñadas para realizar inventarios de manera rápida y gestionar grandes colecciones sin problemas. Los datos se capturan desde un dispositivo RFID inalámbrico integrado con tecnología Android. Este dispositivo es resistente, eficiente y cuenta con un potente alcance. Permite leer etiquetas RFID que se encuentren cerca de superficies metálicas.",
+        "Con esta herramienta, puede encontrar rápidamente libros faltantes, identificar y reposicionar materiales mal colocados, localizar reservas, realizar inventarios y restablecer la seguridad, todo en una sola pasada. Las alertas visuales y auditivas le notifican cuando se encuentra un elemento, mostrando su nombre. La alta duración de su batería permite estar en acción durante todo el tiempo que sea necesario, mientras que su velocidad de escaneo de 20 artículos por segundo garantiza una eficiencia máxima.",
+        "Además, permite la generación de informes y análisis sobre múltiples ubicaciones desde una única plataforma central."
+      ],
+      "enlace": {
+        "texto": "Más información en Bibliotheca",
+        "url": "https://www.bibliotheca.com/library-technology-meet-the-new-dla-inventorywand/"
+      },
+      "banner": "servicios/inventarios-banner.jpg",
+      "imagenes": [
+        {
+          "src": "servicios/inventarios-1.jpg",
+          "alt": "Lector RFID de mano con un teléfono acoplado recorre los lomos de los libros en una estantería"
+        }
+      ]
+    },
+    {
+      "slug": "lockers-inteligentes",
+      "linea": "productos-bibliotheca",
+      "nombre": "Lockers inteligentes",
+      "parrafos": [
+        "Diseñado para ampliar la cobertura y accesibilidad de la biblioteca, remoteLocker ofrece un cómodo autoservicio para recoger reservas, consultar el catálogo y hacer devoluciones.",
+        "El sistema modular se puede personalizar para cualquier biblioteca o espacio, incluso en exteriores. La pantalla de remoteLocker funciona como tablero para difundir mensajes a todos sus usuarios."
+      ],
+      "enlace": {
+        "texto": "Más información en Bibliotheca",
+        "url": "https://www.bibliotheca.com/es-la/soluciones/lockers-de-retiro/"
+      },
+      "banner": "servicios/lockers-inteligentes-banner.jpg",
+      "imagenes": [
+        {
+          "src": "servicios/lockers-inteligentes-1.jpg",
+          "alt": "Usuaria retira un libro reservado desde un locker inteligente rojo"
+        },
+        {
+          "src": "servicios/lockers-inteligentes-2.jpg",
+          "alt": "Módulo de lockers remoteLocker decorado con lomos de libros y pantalla táctil central"
+        },
+        {
+          "src": "servicios/lockers-inteligentes-3.jpg",
+          "alt": "Módulo de lockers remoteLocker con gráfica personalizada y lector en la puerta central"
+        }
+      ]
+    },
+    {
+      "slug": "portal-de-bibliotecas",
+      "linea": "plataformas-ia",
+      "nombre": "Portal de Bibliotecas",
+      "parrafos": [
+        "Ofrecemos un servicio integral de diseño: nos encargamos de cada etapa del proceso, desde el diseño atractivo y funcional de tu sitio web hasta la implementación de las últimas tecnologías, integraciones y prácticas recomendadas.",
+        "Estamos comprometidos en brindarte el apoyo necesario para potenciar tu institución y alcanzar el éxito en el entorno digital. Contamos con un equipo multidisciplinario para abordar tu proyecto."
+      ],
+      "banner": "servicios/portal-de-bibliotecas-banner.jpg",
+      "imagenes": [
+        {
+          "src": "servicios/portal-de-bibliotecas-1.jpg",
+          "alt": "Portal de bibliotecas de la Universidad de O’Higgins en un computador portátil"
+        },
+        {
+          "src": "servicios/portal-de-bibliotecas-2.jpg",
+          "alt": "Portal de biblioteca del CFT ENAC en un computador portátil"
+        },
+        {
+          "src": "servicios/portal-de-bibliotecas-3.jpg",
+          "alt": "Portal de bibliotecas de la Universidad Bernardo O’Higgins en un computador portátil"
+        }
+      ]
+    },
+    {
+      "slug": "koha-instalacion-y-soporte",
+      "linea": "plataformas-ia",
+      "nombre": "Koha: instalación y soporte",
+      "parrafos": [
+        "Koha es un sistema integrado de gestión de bibliotecas (SIGB) conocido por ser el primer software libre y de código abierto en el ámbito de la automatización bibliotecaria. 100 % web, cuenta con los principales módulos para desarrollar la gestión de una biblioteca o unidad de información.",
+        "Una de las características más destacadas de Koha es su enfoque colaborativo. El proyecto está respaldado por una comunidad global de desarrolladores y usuarios que colaboran para mejorar y mantener el software. Esto significa que las bibliotecas que utilizan Koha pueden beneficiarse de las contribuciones de la comunidad, así como adaptar y personalizar el sistema según sus necesidades específicas.",
+        "Koha ha sido adoptado por bibliotecas y organizaciones en todo el mundo debido a su naturaleza de software libre y código abierto, lo que brinda flexibilidad, control y la capacidad de personalizar el sistema según las necesidades locales. Además, el hecho de que sea de código abierto permite que se realicen auditorías de seguridad y se detecten y solucionen posibles problemas de manera más transparente."
+      ],
+      "enlace": {
+        "texto": "Más información en la comunidad Koha",
+        "url": "https://koha-community.org/"
+      },
+      "banner": "servicios/koha-banner.jpg",
+      "imagenes": [
+        {
+          "src": "servicios/koha-1.jpg",
+          "alt": "Catálogo en línea Koha de la biblioteca del CFT ENAC en un computador portátil"
+        },
+        {
+          "src": "servicios/koha-2.jpg",
+          "alt": "Catálogo en línea Koha en un computador portátil y en un teléfono"
+        }
+      ]
+    },
+    {
+      "slug": "buscador-bibliografias",
+      "linea": "plataformas-ia",
+      "nombre": "Buscador de Bibliografías",
+      "bajada": "La bibliografía de cada asignatura, dentro del sistema de gestión de aprendizaje (LMS).",
+      "parrafos": [
+        "Con su cuenta institucional, cada estudiante ve la bibliografía básica y complementaria de sus asignaturas, con citas APA listas y acceso al recurso digital o al ejemplar físico.",
+        "Se integra a Canvas, Moodle o Blackboard (LTI 1.3) e incluye indicadores de uso para procesos de acreditación."
+      ],
+      "banner": "servicios/buscador-bibliografias-banner.jpg",
+      "imagenes": [
+        {
+          "src": "servicios/buscador-bibliografias-1.png",
+          "alt": "Pantallas del Buscador de Bibliografías: lista de asignaturas del estudiante y la bibliografía de una de ellas"
+        }
+      ]
+    },
+    {
+      "slug": "agente-biblioteca",
+      "linea": "plataformas-ia",
+      "nombre": "Biblioteca Agéntica",
+      "bajada": "Tu biblioteca responde las 24 horas.",
+      "parrafos": [
+        "Un agente de inteligencia artificial que atiende a tus estudiantes en cualquier momento, conectado en tiempo real a tu software de gestión y a tu portal institucional.",
+        "Consulta la disponibilidad por sede, las bibliografías y los recursos digitales antes de responder, sin inventar datos. Además, orienta al estudiante sin hacerle las tareas."
+      ],
+      "banner": "servicios/agente-biblioteca-banner.jpg",
+      "imagenes": [
+        {
+          "src": "servicios/agente-biblioteca-1.png",
+          "alt": "Pantallas de la Biblioteca Agéntica: un asistente conversacional responde consultas de estudiantes con datos de la biblioteca"
+        }
+      ]
+    },
+    {
+      "slug": "visor-libro-ia",
+      "linea": "plataformas-ia",
+      "nombre": "Visor de PDF",
+      "bajada": "El estudiante no sale del libro para estudiarlo.",
+      "parrafos": [
+        "Convierte cada libro digital de tu colección en una herramienta activa de estudio. La lectura es en línea, página a página. El estudiante puede tomar notas, resaltar, poner marcadores, generar la cita bibliográfica de cada página y mucho más.",
+        "La descarga y la impresión de fragmentos se habilitan solo en los límites que fija la licencia de cada título."
+      ],
+      "banner": "servicios/visor-libro-ia-banner.jpg",
+      "imagenes": [
+        {
+          "src": "servicios/visor-libro-ia-1.png",
+          "alt": "Pantallas del Visor de PDF: un libro abierto con panel de notas y un asistente de estudio al costado"
+        }
+      ]
+    }
+  ]
+}

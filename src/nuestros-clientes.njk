@@ -1,0 +1,27 @@
+---
+layout: base.njk
+title: Nuestros clientes
+seccionMenu: clientes
+description: "Universidades, institutos, centros de formación técnica e instituciones públicas que confían en Digital G+."
+---
+{#- Logos: src/_data/clientes.json -#}
+<div class="contenedor">
+  <nav class="migas" aria-label="Ruta de navegación">
+    <ol><li><a href="/">Inicio</a></li><li aria-current="page">Clientes</li></ol>
+  </nav>
+</div>
+
+<section class="cabeza-pagina">
+  <div class="contenedor">
+    <p class="antetitulo">Clientes</p>
+    <h1>{{ sitio.clientes.titulo }}</h1>
+  </div>
+</section>
+
+<section class="seccion seccion--sin-arriba" aria-label="Instituciones clientes">
+  <div class="contenedor">
+    {% include "parciales/logos.njk" %}
+  </div>
+</section>
+
+{% include "parciales/cierre.njk" %}

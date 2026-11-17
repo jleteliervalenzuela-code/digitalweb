@@ -1,0 +1,122 @@
+---
+layout: base.njk
+seccionMenu: servicios
+pagination:
+  data: servicios.items
+  size: 1
+  alias: s
+  addAllPagesToCollections: true
+permalink: "/servicio/{{ s.slug }}/"
+eleventyComputed:
+  title: "{{ s.nombre }}"
+  description: "{{ (s.bajada or s.parrafos[0]) | primeraOracion }}"
+  imagenOg: "{{ s.imagenes[0].src if s.imagenes.length else s.banner }}"
+---
+{#- =============================================================
+    FICHA DE SERVICIO (una página por cada ítem de servicios.json)
+    La URL es /servicio/<slug>/, igual que en el sitio anterior.
+    ============================================================= -#}
+{%- set linea = servicios.lineas | lineaPorId(s.linea) -%}
+{%- set hermanos = servicios.items | deLinea(s.linea) -%}
+{%- set slugActual = s.slug -%}
+{%- set otrosServicios = hermanos | sinSlug(slugActual) -%}
+<div class="contenedor">
+  <nav class="migas" aria-label="Ruta de navegación">
+    <ol>
+      <li><a href="/">Inicio</a></li>
+      <li><a href="/nuestros-servicios/">Servicios</a></li>
+      <li><a href="/nuestros-servicios/#{{ linea.id }}">{{ linea.nombre }}</a></li>
+      <li aria-current="page">{{ s.nombreCorto or s.nombre }}</li>
+    </ol>
+  </nav>
+</div>
+
+{#- Cabecera de la ficha: si hay foto de producto, va a la derecha (no se agranda
+    más que su tamaño original); si solo hay banner, va como franja debajo. #}
+<section class="cabeza-pagina">
+  <div class="contenedor {{ 'dividido cabeza-pagina--dividida' if s.imagenes.length }}">
+    <div>
+      <p class="antetitulo">{{ linea.nombre }}</p>
+      <h1>{{ s.nombre }}</h1>
+      {%- if s.bajada %}<p class="bajada">{{ s.bajada }}</p>{% endif %}
+      <div class="acciones">
+        <a class="boton boton--principal" href="/contacto/?servicio={{ s.slug }}">Solicitar cotización {% icono "arrow-right" %}</a>
+        {% set claseBoton = "boton--secundario" %}{% include "parciales/boton-whatsapp.njk" %}
+      </div>
+    </div>
+    {%- if s.imagenes.length %}
+    <div class="marco servicio__imagen">
+      {% imagen s.imagenes[0].src, s.imagenes[0].alt, "(min-width: 56rem) 48vw, 92vw", { prioridad: true, anchos: [480, 900] } %}
+    </div>
+    {%- endif %}
+  </div>
+</section>
+
+{%- if not s.imagenes.length %}
+<div class="contenedor">
+  <div class="marco servicio__imagen servicio__imagen--banda">
+    {% imagen s.banner, "", "(min-width: 75rem) 1200px, 92vw", { prioridad: true, anchos: [800, 1200, 1900] } %}
+  </div>
+</div>
+{%- endif %}
+
+<section class="seccion" aria-label="Descripción del servicio">
+  <div class="contenedor servicio__cuerpo">
+    <div class="prosa">
+      {%- for p in s.parrafos %}
+      <p>{{ p }}</p>
+      {%- endfor %}
+
+      {%- if s.lista %}
+      <h2>{{ s.lista.titulo }}</h2>
+      <ul class="lista-check">
+        {%- for item in s.lista.items %}
+        <li>{% icono "check" %}<span>{{ item }}</span></li>
+        {%- endfor %}
+      </ul>
+      {%- endif %}
+
+      {%- if s.imagenes.length > 1 %}
+      <div class="galeria {{ 'galeria--3' if s.imagenes.length > 3 else 'galeria--2' }}">
+        {%- for img in s.imagenes %}{% if not loop.first %}
+        <div class="marco">
+          {% imagen img.src, img.alt, "(min-width: 64rem) 420px, (min-width: 40rem) 45vw, 92vw", { anchos: [480, 900] } %}
+        </div>
+        {%- endif %}{% endfor %}
+      </div>
+      {%- endif %}
+    </div>
+
+    <aside class="ficha" aria-labelledby="titulo-ficha">
+      <h2 id="titulo-ficha">¿Te interesa este servicio?</h2>
+      <p>Cuéntanos qué necesita tu biblioteca y te enviamos una cotización.</p>
+      <div class="acciones">
+        <a class="boton boton--principal" href="/contacto/?servicio={{ s.slug }}">Solicitar cotización</a>
+        {% set claseBoton = "boton--secundario" %}{% include "parciales/boton-whatsapp.njk" %}
+      </div>
+      {%- if s.enlace %}
+      <a class="ficha__externo enlace-flecha" href="{{ s.enlace.url }}" target="_blank" rel="noopener">{{ s.enlace.texto }} {% icono "arrow-up-right" %}<span class="solo-lectores"> (se abre en una pestaña nueva)</span></a>
+      {%- endif %}
+    </aside>
+  </div>
+</section>
+
+{%- if hermanos.length > 1 %}
+<section class="seccion seccion--blanca" aria-labelledby="titulo-otros">
+  <div class="contenedor">
+    <div class="encabezado revelar">
+      <p class="antetitulo">{{ linea.nombre }}</p>
+      <h2 id="titulo-otros">Otros servicios de esta línea</h2>
+    </div>
+    <div class="rejilla rejilla--3">
+      {#- asyncEach (y no for) porque la tarjeta usa el atajo de imagen, que es asíncrono #}
+      {%- asyncEach s in otrosServicios %}
+      {% include "parciales/tarjeta-servicio.njk" %}
+      {%- endeach %}
+    </div>
+  </div>
+</section>
+{%- endif %}
+
+{% set servicioPreseleccionado = slugActual %}
+{% include "parciales/cierre.njk" %}

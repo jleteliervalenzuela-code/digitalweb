@@ -1,0 +1,80 @@
+{#- =============================================================
+    Plantilla base: la usan todas las páginas.
+    Cada página define en su cabecera (front matter):
+      title:        título de la página (sin el nombre de la marca)
+      description:  descripción para buscadores (máx. ~160 caracteres)
+      imagenOg:     (opcional) imagen para compartir, relativa a /assets/img/
+      seccionMenu:  (opcional) qué ítem del menú queda marcado
+    ============================================================= -#}
+{%- set tituloCompleto = (title + " | " + sitio.nombre) if title else (sitio.nombre + " | " + sitio.lema) -%}
+{%- set urlCanonica = sitio.url + page.url -%}
+{%- set imagenCompartir = sitio.url + "/assets/img/" + (imagenOg or "marca/og.jpg") -%}
+<!doctype html>
+<html lang="{{ sitio.idioma }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ tituloCompleto }}</title>
+  <meta name="description" content="{{ description or sitio.descripcion }}">
+  <link rel="canonical" href="{{ urlCanonica }}">
+  {%- if noindex %}<meta name="robots" content="noindex">{% endif %}
+
+  {#- Compartir en redes (Open Graph) #}
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CL">
+  <meta property="og:site_name" content="{{ sitio.nombre }}">
+  <meta property="og:title" content="{{ tituloCompleto }}">
+  <meta property="og:description" content="{{ description or sitio.descripcion }}">
+  <meta property="og:url" content="{{ urlCanonica }}">
+  <meta property="og:image" content="{{ imagenCompartir }}">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="theme-color" content="#fafbff">
+  <link rel="icon" href="/assets/img/marca/favicon-48.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="/assets/img/marca/apple-touch-icon.png">
+
+  {#- La fuente principal se precarga para evitar saltos de texto #}
+  <link rel="preload" href="/assets/fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/estilos.css?v={{ build.version }}">
+  <script>document.documentElement.classList.add("js")</script>
+  <script src="/assets/js/sitio.js?v={{ build.version }}" defer></script>
+
+  {%- if entorno == "produccion" and sitio.gtm %}
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','{{ sitio.gtm }}');</script>
+  <!-- Fin Google Tag Manager -->
+  {%- endif %}
+
+  {#- Datos estructurados de la organización (solo hechos verificados) #}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "{{ sitio.nombre }}",
+    "url": "{{ sitio.url }}",
+    "logo": "{{ sitio.url }}/assets/img/marca/logo.png",
+    "email": "{{ sitio.contacto.correo }}",
+    "telephone": "{{ sitio.contacto.telefonoEnlace }}",
+    "areaServed": "CL"
+  }
+  </script>
+</head>
+<body>
+  {%- if entorno == "produccion" and sitio.gtm %}
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ sitio.gtm }}" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
+  {%- endif %}
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  {% include "parciales/cabecera.njk" %}
+
+  <main id="contenido" tabindex="-1">
+    {{ content | safe }}
+  </main>
+
+  {% include "parciales/pie.njk" %}
+</body>
+</html>

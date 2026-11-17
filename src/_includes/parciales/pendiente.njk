@@ -1,0 +1,7 @@
+{#- Muestra un aviso de texto pendiente solo si sitio.mostrarPendientes es true.
+    Variable: queFalta (descripción de lo que falta) -#}
+{%- if sitio.mostrarPendientes %}
+<div class="pendiente" role="note">
+  <strong>[PENDIENTE]</strong> {{ queFalta }}
+</div>
+{%- endif %}

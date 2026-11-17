@@ -1,0 +1,12 @@
+{#- Tarjeta de un servicio. Variable: s (un ítem de servicios.json) -#}
+{%- set img = s.imagenes[0] if s.imagenes.length else { src: s.banner, alt: "" } -%}
+<article class="tarjeta">
+  <div class="tarjeta__imagen">
+    {% imagen img.src, "", "(min-width: 64rem) 380px, (min-width: 40rem) 45vw, 92vw", { anchos: [480, 900] } %}
+  </div>
+  <div class="tarjeta__cuerpo">
+    <h3><a href="/servicio/{{ s.slug }}/">{{ s.nombre }}</a></h3>
+    {%- if s.bajada %}<p>{{ s.bajada }}</p>{% endif %}
+    <span class="enlace-flecha" aria-hidden="true">Ver servicio {% icono "arrow-right" %}</span>
+  </div>
+</article>

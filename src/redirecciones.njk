@@ -1,0 +1,30 @@
+---
+pagination:
+  data: redirecciones
+  size: 1
+  alias: r
+permalink: "{{ r.desde }}index.html"
+eleventyExcludeFromCollections: true
+---
+{#- =============================================================
+    REDIRECCIONES de direcciones antiguas del sitio WordPress.
+    GitHub Pages no permite redirecciones 301 de servidor, así que
+    cada dirección antigua es una página mínima que lleva de inmediato
+    a la nueva (meta refresh + enlace canónico). Los buscadores la
+    tratan como una redirección permanente.
+    Lista: src/_data/redirecciones.json
+    ============================================================= -#}
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <title>Redirigiendo…</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="{{ sitio.url }}{{ r.hacia }}">
+  <meta http-equiv="refresh" content="0; url={{ r.hacia }}">
+  <script>location.replace({{ r.hacia | dump | safe }} + location.hash);</script>
+</head>
+<body>
+  <p>Esta página se movió. <a href="{{ r.hacia }}">Continuar a la nueva dirección</a>.</p>
+</body>
+</html>

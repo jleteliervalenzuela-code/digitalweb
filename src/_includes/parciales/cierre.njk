@@ -1,0 +1,18 @@
+{#- =============================================================
+    Llamado final a cotizar. Aparece al final de casi todas las páginas.
+    Variables opcionales: tituloCierre, servicioPreseleccionado (slug)
+    ============================================================= -#}
+<section class="seccion oscuro cierre" aria-labelledby="titulo-cierre">
+  <div class="contenedor revelar">
+    <p class="antetitulo">Contacto</p>
+    <h2 id="titulo-cierre">{{ tituloCierre or "Hablemos de tu biblioteca" }}</h2>
+    <div class="acciones">
+      <a class="boton boton--claro" href="/contacto/{% if servicioPreseleccionado %}?servicio={{ servicioPreseleccionado }}{% endif %}">Solicitar cotización</a>
+      {% set claseBoton = "boton--contorno-claro" %}{% include "parciales/boton-whatsapp.njk" %}
+    </div>
+    <div class="cierre__datos">
+      <a href="mailto:{{ sitio.contacto.correo }}">{% icono "mail" %}{{ sitio.contacto.correo }}</a>
+      <a href="tel:{{ sitio.contacto.telefonoEnlace }}">{% icono "phone" %}{{ sitio.contacto.telefono }}</a>
+    </div>
+  </div>
+</section>

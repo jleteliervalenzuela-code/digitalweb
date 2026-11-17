@@ -1,0 +1,4 @@
+{#- Botón secundario de WhatsApp. Variable opcional: claseBoton -#}
+<a class="boton {{ claseBoton or 'boton--secundario' }}" href="https://wa.me/{{ sitio.contacto.whatsapp }}?text={{ sitio.contacto.whatsappMensaje | urlencode }}" target="_blank" rel="noopener">
+  {% icono "whatsapp", "icono icono-wa" %}Escribir por WhatsApp<span class="solo-lectores"> (se abre en una pestaña nueva)</span>
+</a>

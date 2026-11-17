@@ -1,0 +1,47 @@
+{#- =============================================================
+    Pie del sitio (una sola vez para todas las páginas).
+    ============================================================= -#}
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie__rejilla">
+      <div>
+        <img class="pie__logo" src="/assets/img/marca/logo-blanco.png" alt="{{ sitio.nombre }}" width="350" height="150" loading="lazy">
+        <p>{{ sitio.partner.titulo }}.</p>
+      </div>
+      {%- for linea in servicios.lineas %}
+      <div>
+        <p class="pie__titulo">{{ linea.nombre }}</p>
+        <ul>
+          {%- for s in servicios.items | deLinea(linea.id) %}
+          <li><a href="/servicio/{{ s.slug }}/">{{ s.nombreCorto or s.nombre }}</a></li>
+          {%- endfor %}
+        </ul>
+      </div>
+      {%- endfor %}
+    </div>
+
+    <div class="pie__rejilla pie__rejilla--contacto">
+      <div>
+        <p class="pie__titulo">Contacto</p>
+        <ul>
+          <li><a href="mailto:{{ sitio.contacto.correo }}">{% icono "mail" %}{{ sitio.contacto.correo }}</a></li>
+          <li><a href="tel:{{ sitio.contacto.telefonoEnlace }}">{% icono "phone" %}{{ sitio.contacto.telefono }}</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="pie__titulo">Sitio</p>
+        <ul>
+          <li><a href="/quienes-somos/">Quiénes somos</a></li>
+          <li><a href="/nuestros-servicios/">Servicios</a></li>
+          <li><a href="/nuestros-clientes/">Clientes</a></li>
+          <li><a href="/contacto/">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pie__base">
+      <p>© {{ build.fecha.getFullYear() }} {{ sitio.nombre }}. Todos los derechos reservados.</p>
+      <p>Bibliotheca, cloudLibrary, remoteLocker y open+ son marcas de sus respectivos dueños.</p>
+    </div>
+  </div>
+</footer>

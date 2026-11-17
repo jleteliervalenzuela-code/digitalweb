@@ -1,0 +1,21 @@
+[
+  { "nombre": "Pontificia Universidad Católica de Chile", "logo": "clientes/uc.jpg" },
+  { "nombre": "Servicio de Impuestos Internos", "logo": "clientes/sii.jpg" },
+  { "nombre": "Universidad San Sebastián", "logo": "clientes/uss.jpg" },
+  { "nombre": "Universidad de Concepción", "logo": "clientes/udec.jpg" },
+  { "nombre": "Universidad Bernardo O’Higgins", "logo": "clientes/ubo.jpg" },
+  { "nombre": "Universidad de O’Higgins", "logo": "clientes/uoh.jpg" },
+  { "nombre": "Universidad Alberto Hurtado", "logo": "clientes/uah.jpg" },
+  { "nombre": "Universidad Central", "logo": "clientes/ucen.jpg" },
+  { "nombre": "Universidad Católica de la Santísima Concepción", "logo": "clientes/ucsc.jpg" },
+  { "nombre": "Universidad Autónoma de Chile", "logo": "clientes/uautonoma.jpg" },
+  { "nombre": "Centro de Formación Técnica ENAC", "logo": "clientes/enac.jpg" },
+  { "nombre": "CFT San Agustín", "logo": "clientes/cft-san-agustin.jpg" },
+  { "nombre": "Instituto de Banca y Finanzas Subercaseaux", "logo": "clientes/subercaseaux.jpg" },
+  { "nombre": "Centro de Formación Técnica ProAndes", "logo": "clientes/proandes.jpg" },
+  { "nombre": "AIEP de la Universidad Andrés Bello", "logo": "clientes/aiep.jpg" },
+  { "nombre": "Facultad de Medicina de la Universidad de Chile", "logo": "clientes/medicina-uchile.jpg" },
+  { "nombre": "Universidad de los Andes", "logo": "clientes/uandes.jpg" },
+  { "nombre": "Iplacex", "logo": "clientes/iplacex.jpg" },
+  { "nombre": "Universidad del Alba", "logo": "clientes/ualba.jpg" }
+]

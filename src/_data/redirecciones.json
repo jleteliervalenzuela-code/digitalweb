@@ -1,0 +1,11 @@
+[
+  { "desde": "/servicio/", "hacia": "/nuestros-servicios/" },
+  { "desde": "/servicio/page/2/", "hacia": "/nuestros-servicios/" },
+  { "desde": "/servicio/biblioteca-agentica/", "hacia": "/servicio/agente-biblioteca/" },
+  { "desde": "/servicio/buscador-de-bibliografias/", "hacia": "/servicio/buscador-bibliografias/" },
+  { "desde": "/category/digitalizacion/", "hacia": "/nuestros-servicios/#digitalizacion" },
+  { "desde": "/category/productos-bibliotheca/", "hacia": "/nuestros-servicios/#productos-bibliotheca" },
+  { "desde": "/category/plataformas-y-productos-con-ia-inteligencia-artificial/", "hacia": "/nuestros-servicios/#plataformas-ia" },
+  { "desde": "/pagina-de-ejemplo/", "hacia": "/" },
+  { "desde": "/super-simple-slider/slider-escritorio/", "hacia": "/" }
+]

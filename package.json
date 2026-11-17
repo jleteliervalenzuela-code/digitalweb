@@ -1,0 +1,20 @@
+{
+  "name": "digitalgmas-sitio",
+  "version": "1.0.0",
+  "description": "Sitio web de Digital G+ (digitalgmas.cl), estático, generado con Eleventy",
+  "scripts": {
+    "build": "eleventy",
+    "dev": "ELEVENTY_ENV=pruebas eleventy --serve",
+    "pruebas": "ELEVENTY_ENV=pruebas eleventy"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.8",
+    "@11ty/eleventy-img": "^7.1.1"
+  },
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,82 @@
+{#- =============================================================
+    Cabecera del sitio (una sola vez para todas las páginas).
+    El menú de servicios se arma solo con src/_data/servicios.json:
+    al agregar un servicio allí, aparece aquí sin tocar este archivo.
+    ============================================================= -#}
+{%- set actual = seccionMenu or "" -%}
+<header class="cabecera">
+  <div class="contenedor cabecera__fila">
+    <a class="cabecera__logo" href="/" aria-label="{{ sitio.nombre }}, ir al inicio">
+      <img src="/assets/img/marca/logo.png" alt="{{ sitio.nombre }}" width="292" height="124">
+    </a>
+
+    <nav class="nav" aria-label="Principal">
+      <ul class="nav__lista">
+        <li><a class="nav__enlace" href="/" {% if actual == "inicio" %}aria-current="page"{% endif %}>Inicio</a></li>
+        <li><a class="nav__enlace" href="/quienes-somos/" {% if actual == "quienes-somos" %}aria-current="page"{% endif %}>Quiénes somos</a></li>
+        <li>
+          <button class="nav__enlace" type="button" aria-expanded="false" aria-controls="panel-servicios" data-panel {% if actual == "servicios" %}aria-current="true"{% endif %}>
+            Servicios {% icono "chevron-down" %}
+          </button>
+          {#- Panel de servicios (escritorio) #}
+          <div class="panel" id="panel-servicios" hidden>
+            <div class="contenedor panel__rejilla">
+              {%- for linea in servicios.lineas %}
+              <div>
+                <a class="panel__titulo" href="/nuestros-servicios/#{{ linea.id }}">{{ linea.nombre }}</a>
+                <ul>
+                  {%- for s in servicios.items | deLinea(linea.id) %}
+                  <li><a href="/servicio/{{ s.slug }}/">{{ s.nombreCorto or s.nombre }}</a></li>
+                  {%- endfor %}
+                </ul>
+              </div>
+              {%- endfor %}
+              <div class="panel__destacado">
+                <p>{{ sitio.partner.titulo }}.</p>
+                <a class="enlace-flecha" href="/nuestros-servicios/">Ver todos los servicios {% icono "arrow-right" %}</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a class="nav__enlace" href="/nuestros-clientes/" {% if actual == "clientes" %}aria-current="page"{% endif %}>Clientes</a></li>
+        <li><a class="nav__enlace" href="/contacto/" {% if actual == "contacto" %}aria-current="page"{% endif %}>Contacto</a></li>
+      </ul>
+    </nav>
+
+    <a class="boton boton--principal boton--chico cabecera__cta" href="/contacto/">Solicitar cotización</a>
+
+    <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu-movil" aria-label="Abrir menú" data-menu>
+      {% icono "menu", "icono icono-abrir" %}{% icono "x", "icono icono-cerrar" %}
+    </button>
+  </div>
+
+  {#- Menú móvil (pantalla completa) #}
+  <nav class="menu-movil" id="menu-movil" aria-label="Principal (móvil)" hidden>
+    <ul>
+      <li><a href="/" {% if actual == "inicio" %}aria-current="page"{% endif %}>Inicio</a></li>
+      <li><a href="/quienes-somos/" {% if actual == "quienes-somos" %}aria-current="page"{% endif %}>Quiénes somos</a></li>
+      <li>
+        <details>
+          <summary>Servicios {% icono "chevron-down" %}</summary>
+          <div class="grupo">
+            {%- for linea in servicios.lineas %}
+            <p class="grupo__titulo">{{ linea.nombre }}</p>
+            <ul>
+              {%- for s in servicios.items | deLinea(linea.id) %}
+              <li><a href="/servicio/{{ s.slug }}/">{{ s.nombreCorto or s.nombre }}</a></li>
+              {%- endfor %}
+            </ul>
+            {%- endfor %}
+            <p class="grupo__titulo"><a href="/nuestros-servicios/">Ver todos los servicios</a></p>
+          </div>
+        </details>
+      </li>
+      <li><a href="/nuestros-clientes/" {% if actual == "clientes" %}aria-current="page"{% endif %}>Clientes</a></li>
+      <li><a href="/contacto/" {% if actual == "contacto" %}aria-current="page"{% endif %}>Contacto</a></li>
+    </ul>
+    <div class="acciones">
+      <a class="boton boton--principal" href="/contacto/">Solicitar cotización</a>
+      {% include "parciales/boton-whatsapp.njk" %}
+    </div>
+  </nav>
+</header>

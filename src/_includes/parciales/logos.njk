@@ -1,0 +1,8 @@
+{#- Muro de logos de clientes. Se arma con src/_data/clientes.json:
+    para agregar un cliente, sube el logo a src/assets/img/clientes/
+    y agrega una línea en ese archivo. -#}
+<ul class="logos" aria-label="Instituciones clientes">
+  {%- for c in clientes %}
+  <li>{% imagen c.logo, c.nombre, "(min-width: 64rem) 280px, (min-width: 40rem) 30vw, 45vw", { anchos: [300, 600] } %}</li>
+  {%- endfor %}
+</ul>
