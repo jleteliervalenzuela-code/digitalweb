@@ -48,7 +48,7 @@ function dgm_import_bloques( $parrafos ) {
 	foreach ( $parrafos as $p ) {
 		$html .= "<!-- wp:paragraph -->\n<p>" . esc_html( $p ) . "</p>\n<!-- /wp:paragraph -->\n\n";
 	}
-	return trim( $html );
+	return trim( $html, " \n\r\t\v\0" );
 }
 
 /**

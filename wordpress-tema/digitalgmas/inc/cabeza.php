@@ -47,10 +47,10 @@ function dgm_descripcion() {
 	if ( is_singular( 'servicio' ) ) {
 		$bajada = get_post_meta( get_the_ID(), 'dgm_bajada', true );
 		$texto  = $bajada ? $bajada : wp_strip_all_tags( get_post_field( 'post_content', get_the_ID() ) );
-		$texto  = trim( preg_replace( '/\s+/', ' ', $texto ) );
+		$texto  = trim( preg_replace( '/\s+/', ' ', $texto ), " \n\r\t\v\0" );
 		$corte  = strpos( $texto, '. ' );
 		$texto  = false !== $corte ? substr( $texto, 0, $corte + 1 ) : $texto;
-		return mb_strlen( $texto ) > 160 ? rtrim( mb_substr( $texto, 0, 157 ) ) . '…' : $texto;
+		return mb_strlen( $texto ) > 160 ? rtrim( mb_substr( $texto, 0, 157 ), " \n\r\t\v\0" ) . '…' : $texto;
 	}
 	if ( is_singular() && has_excerpt() ) {
 		return get_the_excerpt();
